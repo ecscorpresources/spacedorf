@@ -3,7 +3,7 @@ import React from "react";
 function App() {
   return (
     <div className="App">
-      <h1>Spacedorf</h1>
+      <h1>Spacedorf Platform</h1>
     </div>
   );
 }
