@@ -33,7 +33,7 @@ class Navbar extends Component {
         <Toolbar handleDrawerToggleClick={this.handleDrawerToggleClick} />
         <SideDrawer show={this.state.SideDrawerOpen} />
         {myBackdrop}
-        <main style={{ marginTop: "56px" }}></main>
+        {/* <main style={{ marginTop: "56px" }}></main> */}
       </div>
     );
   }
