@@ -52,7 +52,7 @@ const Homepage = () => {
                     <option value="" defaultValue>
                       BathRooms
                     </option>
-                    <option value="">Property Location</option>
+                    <option value="">BathRooms</option>
                   </select>
                 </div>
                 <div className="col-md-3">
