@@ -1,0 +1,57 @@
+#agentFirstSection {
+  background: url("../../assets/img/11.png") center/cover no-repeat;
+  height: 402px;
+  margin-top: -89px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    color: #fff;
+    font-size: 46px;
+    padding-top: 100px;
+    padding-left: 50px;
+    font-family: NexaBold;
+  }
+
+  form {
+    padding-left: 50px;
+  }
+
+  form input {
+    margin-right: 4px;
+    width: 32%;
+    padding: 12px 5px 12px 10px;
+    color: #6b7d87;
+    font-size: 14px;
+  }
+
+  form button {
+    padding: 10px 60px 10px 60px;
+    border: none;
+    background-color: #30caa0;
+    color: #fff;
+  }
+}
+
+#agentSecondSection .row.first_row {
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 10px;
+
+  .col-md-10 {
+    border-bottom: 2px solid #ddd;
+    h1 {
+      font-size: 25px;
+    }
+  }
+}
+
+#agentThirdSection .row {
+  justify-content: center;
+}
+
+#agentThirdSection .row .col-md-2 {
+  background-color: #ddd;
+  margin-left: 20px;
+}
