@@ -406,12 +406,13 @@ body {
 
   .col-md-5.col-md-5.image_div div {
     position: absolute;
+    position: absolute;
     top: 27px;
-    left: 42px;
+    left: 44px;
     background: rgba(0, 0, 0, 0.3);
     padding: 30px 170px 30px 10px;
     color: #fff;
-
+    width: 80%;
     h4 {
       font-size: 60px;
     }
