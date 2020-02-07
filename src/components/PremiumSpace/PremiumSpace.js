@@ -326,7 +326,7 @@ const PremiumSpace = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 facilities_2">
                       <div>
                         <div>
                           <input type="checkbox" name="" id="" />
@@ -334,7 +334,7 @@ const PremiumSpace = () => {
                         </div>
                         <div>
                           <input type="checkbox" name="Theatre" id="" />
-                          <label htmlFor="Theatre">Conference</label>
+                          <label htmlFor="Theatre">Conference Hall</label>
                         </div>
                       </div>
                     </div>
@@ -342,7 +342,7 @@ const PremiumSpace = () => {
 
                   <p>Facilities</p>
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 facilities_1">
                       <div>
                         <div>
                           <input type="checkbox" name="" id="" />
@@ -374,7 +374,7 @@ const PremiumSpace = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 facilities_2">
                       <div>
                         <div>
                           <input type="checkbox" name="" id="" />
@@ -390,11 +390,11 @@ const PremiumSpace = () => {
                         </div>
                         <div>
                           <input type="checkbox" name="Theatre" id="" />
-                          <label htmlFor="Theatre">Aircond</label>
+                          <label htmlFor="Theatre">Airconditioning</label>
                         </div>
                         <div>
                           <input type="checkbox" name="Theatre" id="" />
-                          <label htmlFor="Theatre">Changing</label>
+                          <label htmlFor="Theatre">Changing Space</label>
                         </div>
                         <div>
                           <input type="checkbox" name="Theatre" id="" />
@@ -402,7 +402,7 @@ const PremiumSpace = () => {
                         </div>
                         <div>
                           <input type="checkbox" name="Theatre" id="" />
-                          <label htmlFor="Theatre">Alternate</label>
+                          <label htmlFor="Theatre">Power Supply</label>
                         </div>
                       </div>
                     </div>

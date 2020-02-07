@@ -361,11 +361,11 @@ const PropertyListing = () => {
                         </div>
                         <div>
                           <input type="checkbox" name="Game Room" id="" />
-                          <label htmlFor="Theatre">Game Room</label>
+                          <label htmlFor="Theatre">Games</label>
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 extras_2">
                       <div>
                         <div>
                           <input type="checkbox" name="" id="" />
