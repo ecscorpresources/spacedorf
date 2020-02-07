@@ -1,0 +1,335 @@
+@font-face {
+  font-family: "font1";
+  src: url(./assets/fonts/segoeuil.ttf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "segoebold";
+  src: url(./assets/fonts/segoe-ui-bold.ttf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "universalbold";
+  src: url(./assets/fonts/UniversalisADFStd-Bold.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "universalregular";
+  src: url(./assets/fonts/UniversalisADFStd-Regular.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "codecBold";
+  src: url(./assets/fonts/Codec-Cold-Bold-trial.ttf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NexaBold";
+  src: url(./assets/fonts/NexaBold.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NexaLight";
+  src: url(./assets/fonts/NexaLight.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "captura";
+  src: url(./assets/fonts/Captura-BlackDemo.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line to remove default firefox select styles */
+@supports (-moz-appearance: none) {
+  select {
+    -moz-appearance: none !important;
+    background: transparent
+      url("data:image/gif;base64,R0lGODlhBgAGAKEDAFVVVX9/f9TU1CgmNyH5BAEKAAMALAAAAAAGAAYAAAIODA4hCDKWxlhNvmCnGwUAOw==")
+      right center no-repeat !important;
+    background-position: calc(100% - 5px) center !important;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.spinner {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+
+#homeHeroSection {
+  background-image: url("./assets/img/1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 792px;
+  margin-top: -90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  p {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+#homeHeroSection .row:nth-child(2) {
+  justify-content: center;
+
+  .col-md-8 {
+    background-color: rgba(236, 230, 223, 0.5);
+    padding: 20px 60px;
+  }
+
+  .col-md-6 {
+    padding: 5px;
+  }
+
+  .col-md-3 {
+    padding: 5px;
+  }
+
+  select,
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+
+  button {
+    background: #30caa0;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none;
+  }
+}
+
+#homeFirstSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+
+  div.line {
+    width: 200px;
+    height: 2px;
+    border: 1px solid #ddd;
+  }
+  h1 {
+    font-size: 30px;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+#homeSecondSection .row {
+  padding: 40px 100px 80px 100px;
+
+  .col-md-3 div {
+    background-color: #6b7d87;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+  }
+  .col-md-3 div p {
+    margin-bottom: 0;
+  }
+  .col-md-3 h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .col-md-3 p {
+    color: #dfbd37;
+    font-weight: bold;
+  }
+
+  .col-md-3 img {
+    width: 100%;
+  }
+}
+
+#homeThirdSection .row {
+  justify-content: center;
+  padding-bottom: 80px;
+  .col-md-3 {
+    display: flex;
+    justify-content: center;
+  }
+  .col-md-3:nth-child(2),
+  .col-md-3:nth-child(3) {
+    border-left: 2px solid #ddd;
+  }
+
+  .col-md-3 h5 {
+    font-weight: 400;
+    font-size: 23px;
+  }
+
+  .col-md-3 h6 {
+    font-weight: bold;
+  }
+
+  .col-md-3 p {
+    font-size: 15px;
+  }
+}
+
+#homeFourthSection .row.first_row {
+  justify-content: center;
+  padding-bottom: 80px;
+
+  .col-md-10 {
+    background-color: #f5f5f5;
+    padding: 20px 0px;
+  }
+
+  .col-md-10 .row {
+    padding-left: 20px;
+  }
+
+  .col-md-10 .col-md-5 img {
+    width: 100%;
+  }
+
+  .col-md-5.form_div div.text_div {
+    border-left: 2px solid #000;
+    padding-left: 25px;
+  }
+
+  .col-md-5.image_div {
+    position: relative;
+  }
+
+  .col-md-5.col-md-5.image_div div {
+    position: absolute;
+    top: 27px;
+    left: 42px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px 170px 30px 10px;
+    color: #fff;
+
+    h4 {
+      font-size: 60px;
+    }
+
+    h2 {
+      font-size: 60px;
+    }
+    h5 {
+      padding-left: 114px;
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 18px;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 10px;
+    }
+  }
+
+  .col-md-5.form_div {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+  }
+
+  form div {
+    margin-bottom: 10px;
+  }
+
+  form input {
+    padding: 10px 190px 10px 10px;
+    border: 1px solid grey;
+    color: grey !important;
+  }
+
+  form select.guest {
+    padding: 10px 60px 10px 10px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    background-color: #fff !important;
+    color: grey !important;
+  }
+
+  form select.event {
+    padding: 10px 100px 10px 10px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    background-color: #fff !important;
+    color: grey !important;
+  }
+
+  form select.space {
+    padding: 10px 90px 10px 10px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    background-color: #fff !important;
+    color: grey !important;
+  }
+
+  form button {
+    background-color: #30caa0;
+    border: none;
+    padding: 10px 44px 10px;
+    color: #fff;
+  }
+}
+
+#homeFifthSection {
+  padding: 0;
+}
+
+#homeFifthSection img {
+  width: 100%;
+}
+
+#homeFooterSection {
+  background-color: #d8d5a0;
+}
+
+#homeFooterSection ul {
+  list-style-type: none;
+}
+
+#homeFooterSection ul li a {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 17px;
+}

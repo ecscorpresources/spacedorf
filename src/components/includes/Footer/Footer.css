@@ -1,0 +1,33 @@
+#homeFooterSection ul li:first-child {
+  font-size: 20px;
+  font-weight: bolder;
+  padding-bottom: 20px;
+  font-family: segoebold;
+}
+
+#homeFooterSection ul.social li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+#homeFooterSection .col-md-12 .row.parent {
+  justify-content: center;
+  padding: 40px 140px;
+}
+
+#homeFooterSection h5 {
+  padding-top: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#homeFooterSection .row.copyright p {
+  text-align: center;
+  padding-bottom: 40px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#homeFooterSection .col-md-3 {
+  margin-left: -50px;
+}
