@@ -21,13 +21,14 @@
   form input {
     margin-right: 4px;
     width: 32%;
-    padding: 12px 5px 12px 10px;
+    padding: 11px 5px 11px 10px;
     color: #6b7d87;
     font-size: 14px;
+    border: none;
   }
 
   form button {
-    padding: 10px 60px 10px 60px;
+    padding: 9px 60px 10px 60px;
     border: none;
     background-color: #30caa0;
     color: #fff;
@@ -52,6 +53,103 @@
 }
 
 #agentThirdSection .row .col-md-2 {
-  background-color: #ddd;
-  margin-left: 20px;
+  background-color: #f8f8f8;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex: 0 0 19.667% !important;
+  max-width: 19.667% !important;
+  padding-top: 14px;
+  padding-bottom: 20px;
+
+  div.image_div img {
+    width: 100%;
+  }
+
+  div p:nth-child(1) {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: 7px;
+  }
+
+  div p:nth-child(3) {
+    padding-top: 50px;
+    font-size: 15px;
+  }
+  div p:nth-child(4) {
+    font-size: 15px;
+  }
+
+  div p:nth-child(5) {
+    font-size: 15px;
+  }
+
+  div a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #373435;
+    font-size: 15px;
+    padding: 8px 20px;
+    margin-right: 25px;
+  }
+}
+
+#agentFourthSection .row {
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .col-md-10 {
+    padding: 0;
+  }
+
+  .col-md-10 img {
+    width: 100%;
+  }
+}
+
+#agentFifthSection .row {
+  justify-content: center;
+}
+
+#agentFifthSection .row .col-md-2 {
+  background-color: #f8f8f8;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex: 0 0 19.667% !important;
+  max-width: 19.667% !important;
+  padding-top: 14px;
+  padding-bottom: 20px;
+
+  div p:nth-child(1) {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: 7px;
+  }
+
+  div p:nth-child(3) {
+    padding-top: 50px;
+    font-size: 15px;
+  }
+  div p:nth-child(4) {
+    font-size: 15px;
+  }
+
+  div p:nth-child(5) {
+    font-size: 15px;
+  }
+
+  div a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #373435;
+    font-size: 15px;
+    padding: 8px 20px;
+    margin-right: 18px;
+  }
+}
+
+#agentFifthSection div.image_div img {
+  width: 100%;
 }

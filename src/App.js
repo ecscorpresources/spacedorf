@@ -13,7 +13,7 @@ const PremiumSpace = lazy(() =>
   import("./components/PremiumSpace/PremiumSpace")
 );
 
-const Agent = lazy(() => import("./components/Agent/Angent"));
+const Agent = lazy(() => import("./components/Agent/Agent"));
 
 function App() {
   return (

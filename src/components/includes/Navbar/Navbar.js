@@ -23,7 +23,6 @@ class Navbar extends Component {
   };
 
   render() {
-    console.log(this.props);
     let myBackdrop;
     if (this.state.SideDrawerOpen) {
       myBackdrop = <Backdrop handleBackdropClick={this.handleBackdropClick} />;
@@ -33,7 +32,6 @@ class Navbar extends Component {
         <Toolbar handleDrawerToggleClick={this.handleDrawerToggleClick} />
         <SideDrawer show={this.state.SideDrawerOpen} />
         {myBackdrop}
-        {/* <main style={{ marginTop: "56px" }}></main> */}
       </div>
     );
   }
