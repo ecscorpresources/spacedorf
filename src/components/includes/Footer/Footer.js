@@ -49,16 +49,13 @@ const Footer = () => {
                 <ul>
                   <li>Quick Assits</li>
                   <li>
-                    <Link to="monkhey">Locate An Agent</Link>
+                    <Link to="/agent">Locate An Agent</Link>
                   </li>
                   <li>
                     <Link to="monkhey">List A Property</Link>
                   </li>
                   <li>
                     <Link to="monkhey">Post A Request</Link>
-                  </li>
-                  <li>
-                    <Link to="monkhey">Find an Event Venue</Link>
                   </li>
                 </ul>
               </div>

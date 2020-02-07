@@ -19,16 +19,16 @@ function App() {
   return (
     <Router>
       <ThemeProvider>
-        <Navbar />
         <Suspense fallback={<MySpinner />}>
+          <Navbar />
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route path="/properties_listing" component={PropertyListing} />
             <Route path="/premium_space" component={PremiumSpace} />
             <Route path="/agent" component={Agent} />
           </Switch>
+          <Footer />
         </Suspense>
-        <Footer />
       </ThemeProvider>
     </Router>
   );
