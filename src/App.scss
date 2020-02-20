@@ -64,175 +64,6 @@
   }
 }
 
-/* begining css reset */
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-
-body {
-  line-height: 1;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-nav ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-
-/* change colors to suit your needs */
-ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-
-/* change colors to suit your needs */
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-abbr[title],
-dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* change border color to suit your needs */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #000;
-  margin: 1em 0;
-  padding: 0;
-}
-
-input,
-select {
-  vertical-align: middle;
-}
-
-/*  end of css reset */
-
 body {
   padding: 0;
   margin: 0;
@@ -250,8 +81,8 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 792px;
-  margin-top: -90px;
+  height: 100vh;
+  margin-top: -88px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -328,27 +159,25 @@ body {
 #homeSecondSection .row {
   padding: 40px 100px 80px 100px;
 
-  .col-md-3 div {
+  .col-lg-3 div {
     background-color: #6b7d87;
     display: flex;
     justify-content: space-between;
     padding: 5px 10px;
+    font-size: 16px;
   }
-  .col-md-3 div p {
+  .col-lg-3 div p {
     margin-bottom: 0;
   }
-  .col-md-3 h4 {
-    font-size: 20px;
+  .col-lg-3 h4 {
+    font-size: 1.25rem;
     font-weight: bold;
   }
 
-  .col-md-3 p {
+  .col-lg-3 p {
     color: #dfbd37;
     font-weight: bold;
-  }
-
-  .col-md-3 img {
-    width: 100%;
+    font-size: 1rem;
   }
 }
 
