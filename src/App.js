@@ -23,9 +23,14 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Homepage} />
-            <Route path="/properties_listing" component={PropertyListing} />
-            <Route path="/premium_space" component={PremiumSpace} />
-            <Route path="/agent" component={Agent} />
+
+            <Route exact path="/premium_space" component={PremiumSpace} />
+            <Route exact path="/agent" component={Agent} />
+            <Route
+              exact
+              path="/properties_listing"
+              component={PropertyListing}
+            />
           </Switch>
           <Footer />
         </Suspense>

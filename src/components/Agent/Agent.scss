@@ -52,7 +52,7 @@
   justify-content: center;
 }
 
-#agentThirdSection .row .col-md-2 {
+#agentThirdSection .row .col-lg-2 {
   background-color: #f8f8f8;
   margin-left: 10px;
   margin-right: 10px;
@@ -84,6 +84,11 @@
     font-size: 15px;
   }
 
+  div.star_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   div a {
     color: #fff;
     text-decoration: none;
@@ -91,6 +96,7 @@
     font-size: 15px;
     padding: 8px 20px;
     margin-right: 25px;
+    align-self: flex-end;
   }
 }
 
@@ -112,7 +118,7 @@
   justify-content: center;
 }
 
-#agentFifthSection .row .col-md-2 {
+#agentFifthSection .row .col-lg-2 {
   background-color: #f8f8f8;
   margin-left: 10px;
   margin-right: 10px;
@@ -140,6 +146,12 @@
     font-size: 15px;
   }
 
+  div.star_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   div a {
     color: #fff;
     text-decoration: none;
@@ -147,6 +159,7 @@
     font-size: 15px;
     padding: 8px 20px;
     margin-right: 18px;
+    align-self: flex-end;
   }
 }
 

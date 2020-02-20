@@ -79,29 +79,45 @@ const Homepage = () => {
 
       <div id="homeSecondSection" className="container-fluid">
         <div className="row">
-          <div className="col-md-3">
-            <img src={require("../../assets/img/2.jpg")} alt="" />
+          <div className="col-10 col-sm-6 col-lg-3 my-2">
+            <img
+              src={require("../../assets/img/2.jpg")}
+              alt=""
+              className="img-fluid"
+            />
             <div>
               <h4>HOUSE</h4>
               <p>248</p>
             </div>
           </div>
-          <div className="col-md-3">
-            <img src={require("../../assets/img/3.jpg")} alt="" />
+          <div className="col-10 col-sm-6 col-lg-3 my-2">
+            <img
+              src={require("../../assets/img/3.jpg")}
+              alt=""
+              className="img-fluid"
+            />
             <div>
               <h4>APARTMENT</h4>
               <p>336</p>
             </div>
           </div>
-          <div className="col-md-3">
-            <img src={require("../../assets/img/4.jpg")} alt="" />
+          <div className="col-10 col-sm-6 col-lg-3 my-2">
+            <img
+              src={require("../../assets/img/4.jpg")}
+              alt=""
+              className="img-fluid"
+            />
             <div>
               <h4>COMMERCIAL</h4>
               <p>517</p>
             </div>
           </div>
-          <div className="col-md-3">
-            <img src={require("../../assets/img/5.jpg")} alt="" />
+          <div className="col-10 col-sm-6 col-lg-3 my-2">
+            <img
+              src={require("../../assets/img/5.jpg")}
+              alt=""
+              className="img-fluid"
+            />
             <div>
               <h4>LAND</h4>
               <p>149</p>

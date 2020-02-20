@@ -34,9 +34,13 @@ const Agent = () => {
       </div>
       <div id="agentThirdSection" className="container-fluid">
         <div className="row">
-          <div className="col-md-2">
+          <div className="col-10 col-sm-6 col-md-6 col-lg-2">
             <div className="image_div">
-              <img src={require("../../assets/img/37.png")} alt="" />
+              <img
+                src={require("../../assets/img/37.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div>
               <p>Stack Homes Estate Management</p>
@@ -48,12 +52,20 @@ const Agent = () => {
             </div>
             <div className="star_div">
               <Link to="/">View Profile</Link>
-              <img src={require("../../assets/img/49.png")} alt="" />
+              <img
+                src={require("../../assets/img/49.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
           </div>
-          <div className="col-md-2">
+          <div className="col-10 col-sm-6 col-md-6 col-lg-2">
             <div className="image_div">
-              <img src={require("../../assets/img/38.png")} alt="" />
+              <img
+                src={require("../../assets/img/38.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div>
               <p>Samson & Sons</p>
@@ -63,14 +75,22 @@ const Agent = () => {
               <p>No 27 New Road</p>
               <p>08098765432</p>
             </div>
-            <div>
+            <div className="star_div">
               <Link to="/">View Profile</Link>
-              <img src={require("../../assets/img/50.png")} alt="" />
+              <img
+                src={require("../../assets/img/50.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
           </div>
-          <div className="col-md-2">
+          <div className="col-10 col-sm-6 col-md-6 col-lg-2">
             <div className="image_div">
-              <img src={require("../../assets/img/39.png")} alt="" />
+              <img
+                src={require("../../assets/img/39.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div>
               <p>Whole Homes Management</p>
@@ -80,14 +100,22 @@ const Agent = () => {
               <p>1 Red Road Lime Estate</p>
               <p>08098765432</p>
             </div>
-            <div>
+            <div className="star_div">
               <Link to="/">View Profile</Link>
-              <img src={require("../../assets/img/51.png")} alt="" />
+              <img
+                src={require("../../assets/img/51.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
           </div>
-          <div className="col-md-2">
+          <div className="col-10 col-sm-6 col-md-6 col-lg-2">
             <div className="image_div">
-              <img src={require("../../assets/img/40.png")} alt="" />
+              <img
+                src={require("../../assets/img/40.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div>
               <p>Rita James</p>
@@ -97,9 +125,13 @@ const Agent = () => {
               <p>55, Ajayi Kingley Street</p>
               <p>08098765432</p>
             </div>
-            <div>
+            <div className="star_div">
               <Link to="/">View Profile</Link>
-              <img src={require("../../assets/img/52.png")} alt="" />
+              <img
+                src={require("../../assets/img/52.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
           </div>
         </div>
@@ -108,16 +140,24 @@ const Agent = () => {
       <div id="agentFourthSection" className="container-fluid">
         <div className="row">
           <div className="col-md-10">
-            <img src={require("../../assets/img/48.png")} alt="" />
+            <img
+              src={require("../../assets/img/48.png")}
+              alt=""
+              className="img-fluid"
+            />
           </div>
         </div>
       </div>
 
       <div id="agentFifthSection" className="container-fluid">
         <div className="row">
-          <div className="col-md-2">
+          <div className="col-10 col-sm-6 col-lg-2">
             <div className="image_div">
-              <img src={require("../../assets/img/41.png")} alt="" />
+              <img
+                src={require("../../assets/img/41.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div>
               <p>Greenland Estate Agency</p>
@@ -127,14 +167,22 @@ const Agent = () => {
               <p>No 3 Ade Street, Ikota</p>
               <p>08098765432</p>
             </div>
-            <div>
+            <div className="star_div">
               <Link to="/">View Profile</Link>
-              <img src={require("../../assets/img/44.png")} alt="" />
+              <img
+                src={require("../../assets/img/44.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
           </div>
-          <div className="col-md-2">
+          <div className="col-10 col-sm-6 col-lg-2">
             <div className="image_div">
-              <img src={require("../../assets/img/37.png")} alt="" />
+              <img
+                src={require("../../assets/img/37.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div>
               <p>Blessing Aguele</p>
@@ -144,14 +192,22 @@ const Agent = () => {
               <p>No 27 New Road</p>
               <p>08098765432</p>
             </div>
-            <div>
+            <div className="star_div">
               <Link to="/">View Profile</Link>
-              <img src={require("../../assets/img/45.png")} alt="" />
+              <img
+                src={require("../../assets/img/45.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
           </div>
-          <div className="col-md-2">
+          <div className="col-10 col-sm-6 col-lg-2">
             <div className="image_div">
-              <img src={require("../../assets/img/42.png")} alt="" />
+              <img
+                src={require("../../assets/img/42.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div>
               <p>City Homes</p>
@@ -161,14 +217,22 @@ const Agent = () => {
               <p>1 Red Road Lime Estate</p>
               <p>08098765432</p>
             </div>
-            <div>
+            <div className="star_div">
               <Link to="/">View Profile</Link>
-              <img src={require("../../assets/img/46.png")} alt="" />
+              <img
+                src={require("../../assets/img/46.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
           </div>
-          <div className="col-md-2">
+          <div className="col-10 col-sm-6 col-md-6 col-lg-2">
             <div className="image_div">
-              <img src={require("../../assets/img/43.png")} alt="" />
+              <img
+                src={require("../../assets/img/43.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div>
               <p>BB Realtors</p>
@@ -178,9 +242,13 @@ const Agent = () => {
               <p>55, Ajayi Kingley Street</p>
               <p>08098765432</p>
             </div>
-            <div>
+            <div className="star_div">
               <Link to="/">View Profile</Link>
-              <img src={require("../../assets/img/47.png")} alt="" />
+              <img
+                src={require("../../assets/img/47.png")}
+                alt=""
+                className="img-fluid"
+              />
             </div>
           </div>
         </div>
