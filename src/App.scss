@@ -272,23 +272,28 @@ body {
     margin-bottom: 10px;
   }
 
+  form div.select_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
   form input {
-    padding: 10px 190px 10px 10px;
+    padding: 10px 0 10px 10px;
     border: 1px solid grey;
     color: grey !important;
+    width: 100%;
   }
 
   form select.guest {
-    padding: 10px 60px 10px 10px;
-    margin-right: 10px;
+    padding: 10px 0 10px 10px;
     border: 1px solid grey;
     background-color: #fff !important;
     color: grey !important;
   }
 
   form select.event {
-    padding: 10px 100px 10px 10px;
-    margin-right: 10px;
+    padding: 10px 0 10px 10px;
     border: 1px solid grey;
     background-color: #fff !important;
     color: grey !important;
@@ -296,7 +301,6 @@ body {
 
   form select.space {
     padding: 10px 90px 10px 10px;
-    margin-right: 10px;
     border: 1px solid grey;
     background-color: #fff !important;
     color: grey !important;
