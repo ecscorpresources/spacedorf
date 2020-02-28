@@ -18,6 +18,11 @@
     padding-left: 50px;
   }
 
+  form div {
+    display: flex;
+    align-items: center;
+  }
+
   form input {
     margin-right: 4px;
     width: 32%;
