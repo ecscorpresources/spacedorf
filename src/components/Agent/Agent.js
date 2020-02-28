@@ -15,11 +15,13 @@ const Agent = () => {
         <div className="row">
           <div className="col-md-12">
             <form>
-              <input
-                type="text"
-                placeholder="Search by Choice Location/Agent Name/Company"
-              />
-              <button type="submit">SEARCH</button>
+              <div className="search_input_div">
+                <input
+                  type="text"
+                  placeholder="Search by Choice Location/Agent Name/Company"
+                />
+                <button type="submit">SEARCH</button>
+              </div>
             </form>
           </div>
         </div>
