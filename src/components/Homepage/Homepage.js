@@ -192,7 +192,7 @@ const Homepage = () => {
                           placeholder="Enter Choice Location"
                         />
                       </div>
-                      <div>
+                      <div className="select_div">
                         <select name="" id="" className="guest">
                           <option value="" defaultValue>
                             No. Of Guests
@@ -205,7 +205,7 @@ const Homepage = () => {
                           </option>
                         </select>
                       </div>
-                      <div>
+                      <div className="select_div">
                         <select name="" id="" className="space">
                           <option value="" defaultValue>
                             Type of Space
