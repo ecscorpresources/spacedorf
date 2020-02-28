@@ -387,7 +387,11 @@ const PropertyListing = () => {
               </div>
             </div>
             <div className="row second_row">
-              <img src={require("../../assets/img/26.png")} alt="" />
+              <img
+                className="advert_img"
+                src={require("../../assets/img/26.png")}
+                alt=""
+              />
             </div>
           </div>
         </div>
