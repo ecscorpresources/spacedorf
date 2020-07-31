@@ -1,5 +1,7 @@
 import React from "react";
 import SearchForm from "../components/Home/SearchForm";
+import { featuredproperties } from "../data/properties";
+import { method } from "../data/method";
 
 const Homepage = () => {
   return (
@@ -8,98 +10,45 @@ const Homepage = () => {
         <SearchForm />
       </section>
 
-      <div className="homeFirstSection">
+      <section className="homeFirstSection">
         <div className="line"></div>
         <h1>EXPLORE PROPERTIES</h1>
-      </div>
+      </section>
 
-      <div className="homeSecondSection">
-        <div className="row">
-          <div className="col-10 col-sm-6 col-lg-3 my-2">
-            <img
-              src={require("../assets/img/2.jpg")}
-              alt=""
-              className="img-fluid"
-            />
-            <div>
-              <h4>HOUSE</h4>
-              <p>248</p>
+      <section className="homeSecondSection">
+        {featuredproperties.map((property, index) => (
+          <div key={index} className="property">
+            <img className="img-fluid" src={property.img} alt="property" />
+            <div className="property-description">
+              <h4>{property.type}</h4>
+              <p>{property.number}</p>
             </div>
           </div>
-          <div className="col-10 col-sm-6 col-lg-3 my-2">
-            <img
-              src={require("../assets/img/3.jpg")}
-              alt=""
-              className="img-fluid"
-            />
+        ))}
+      </section>
+      <section className="homeThirdSection">
+        {method.map((item, index) => (
+          <div
+            className="d-flex flex-column align-items-center method"
+            key={index}
+          >
             <div>
-              <h4>APARTMENT</h4>
-              <p>336</p>
+              <img
+                className="img-fluid"
+                src={item.img}
+                alt="how to purchase a property"
+              />
+            </div>
+            <div>
+              <h4>{item.title}</h4>
+              <h5>{item.subtitle}</h5>
+              <p>{item.text}</p>
             </div>
           </div>
-          <div className="col-10 col-sm-6 col-lg-3 my-2">
-            <img
-              src={require("../assets/img/4.jpg")}
-              alt=""
-              className="img-fluid"
-            />
-            <div>
-              <h4>COMMERCIAL</h4>
-              <p>517</p>
-            </div>
-          </div>
-          <div className="col-10 col-sm-6 col-lg-3 my-2">
-            <img
-              src={require("../assets/img/5.jpg")}
-              alt=""
-              className="img-fluid"
-            />
-            <div>
-              <h4>LAND</h4>
-              <p>149</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="homeThirdSection">
-        <div className="row">
-          <div className="col-md-3">
-            <div>
-              <img src={require("../assets/img/6.png")} alt="" />
-              <h5>Locate an agent</h5>
-              <h6>Let Us Help</h6>
-              <p>
-                With over 250 agents in our platform <br /> you will find a good
-                hand within <br /> your choice area
-              </p>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div>
-              <img src={require("../assets/img/7.png")} alt="" />
-              <h5>List a Property</h5>
-              <h6>Sell that house...FAST</h6>
-              <p>
-                Place your property in view of <br /> real estate agents and
-                potential <br /> buyers from all across Nigeria
-              </p>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div>
-              <img src={require("../assets/img/8.png")} alt="" />
-              <h5>Post a Request</h5>
-              <h6>Don't see what you like?</h6>
-              <p>
-                Post a request and a real estate <br /> agent will contact you
-                when <br /> they have a property fitting your need
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+        ))}
+      </section>
 
-      <div className="homeFourthSection">
+      <section className="homeFourthSection">
         <div className="row first_row">
           <div className="col-md-10">
             <div className="row">
@@ -156,14 +105,14 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="homeFifthSection">
+      </section>
+      <section className="homeFifthSection">
         <div className="row">
           <div className="col-md-12">
             <img src={require("../assets/img/10.png")} alt="" />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

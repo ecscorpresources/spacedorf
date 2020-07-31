@@ -1,74 +1,76 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 
-const SearchForm = () => {
-  return (
-    <FormWrapper>
-      <article>
-        <h1>enjoy a perfect space</h1>
-        <p>your online source for premium apartment and workspace</p>
-      </article>
-      <article className="d-flex form-section">
-        <form>
-          <article className="form-container">
-            <div className="form-container-first-row">
-              <div>
-                <input
-                  type="text"
-                  placeholder="Enter Choice Location - Suburb, State"
-                />
+class SearchForm extends Component {
+  render() {
+    return (
+      <FormWrapper>
+        <article>
+          <h1>enjoy a perfect space</h1>
+          <p>your online source for premium apartment and workspace</p>
+        </article>
+        <article className="d-flex form-section">
+          <form>
+            <article className="form-container">
+              <div className="form-container-first-row">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Enter Choice Location - Suburb, State"
+                  />
+                </div>
+                <div>
+                  <select name="" id="">
+                    <option value="" defaultValue>
+                      Property type
+                    </option>
+                    <option value="">Property Location</option>
+                  </select>
+                </div>
+                <div>
+                  <select name="" id="">
+                    <option value="" defaultValue>
+                      For Sale
+                    </option>
+                    <option value="">Property Location</option>
+                  </select>
+                </div>
               </div>
-              <div>
-                <select name="" id="">
-                  <option value="" defaultValue>
-                    Property type
-                  </option>
-                  <option value="">Property Location</option>
-                </select>
-              </div>
-              <div>
-                <select name="" id="">
-                  <option value="" defaultValue>
-                    For Sale
-                  </option>
-                  <option value="">Property Location</option>
-                </select>
-              </div>
-            </div>
 
-            <div className="form-container-second-row">
-              <div>
-                <select name="" id="">
-                  <option value="" defaultValue>
-                    BedRooms
-                  </option>
-                  <option value="">Property Location</option>
-                </select>
+              <div className="form-container-second-row">
+                <div>
+                  <select name="" id="">
+                    <option value="" defaultValue>
+                      BedRooms
+                    </option>
+                    <option value="">Property Location</option>
+                  </select>
+                </div>
+                <div>
+                  <select name="" id="">
+                    <option value="" defaultValue>
+                      BathRooms
+                    </option>
+                    <option value="">BathRooms</option>
+                  </select>
+                </div>
+                <div>
+                  <select name="" id="">
+                    <option value="" defaultValue>
+                      Price Range
+                    </option>
+                    <option value="">Property Location</option>
+                  </select>
+                </div>
+                <button type="submit">SEARCH</button>
               </div>
-              <div>
-                <select name="" id="">
-                  <option value="" defaultValue>
-                    BathRooms
-                  </option>
-                  <option value="">BathRooms</option>
-                </select>
-              </div>
-              <div>
-                <select name="" id="">
-                  <option value="" defaultValue>
-                    Price Range
-                  </option>
-                  <option value="">Property Location</option>
-                </select>
-              </div>
-              <button type="submit">SEARCH</button>
-            </div>
-          </article>
-        </form>
-      </article>
-    </FormWrapper>
-  );
-};
+            </article>
+          </form>
+        </article>
+      </FormWrapper>
+    );
+  }
+}
 
 const FormWrapper = styled.section`
   h1 {
