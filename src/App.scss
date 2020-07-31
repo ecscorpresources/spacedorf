@@ -1,74 +1,4 @@
-@font-face {
-  font-family: "font1";
-  src: url(./assets/fonts/segoeuil.ttf) format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "segoebold";
-  src: url(./assets/fonts/segoe-ui-bold.ttf) format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "universalbold";
-  src: url(./assets/fonts/UniversalisADFStd-Bold.otf) format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "universalregular";
-  src: url(./assets/fonts/UniversalisADFStd-Regular.otf) format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "codecBold";
-  src: url(./assets/fonts/Codec-Cold-Bold-trial.ttf) format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NexaBold";
-  src: url(./assets/fonts/NexaBold.otf) format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NexaLight";
-  src: url(./assets/fonts/NexaLight.otf) format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "captura";
-  src: url(./assets/fonts/Captura-BlackDemo.otf) format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* line to remove default firefox select styles */
-@supports (-moz-appearance: none) {
-  select {
-    -moz-appearance: none !important;
-    background: transparent
-      url("data:image/gif;base64,R0lGODlhBgAGAKEDAFVVVX9/f9TU1CgmNyH5BAEKAAMALAAAAAAGAAYAAAIODA4hCDKWxlhNvmCnGwUAOw==")
-      right center no-repeat !important;
-    background-position: calc(100% - 5px) center !important;
-  }
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-}
+@import "./styles/main.scss";
 
 .spinner {
   position: absolute;
@@ -76,7 +6,7 @@ body {
   left: 50%;
 }
 
-#homeHeroSection {
+.homeHeroSection {
   background-image: url("./assets/img/1.jpg");
   background-position: center;
   background-size: cover;
@@ -105,7 +35,7 @@ body {
   }
 }
 
-#homeHeroSection .row:nth-child(2) {
+.homeHeroSection .row:nth-child(2) {
   justify-content: center;
 
   .col-md-8 {
@@ -137,7 +67,7 @@ body {
   }
 }
 
-#homeFirstSection {
+.homeFirstSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,7 +86,7 @@ body {
   }
 }
 
-#homeSecondSection .row {
+.homeSecondSection .row {
   padding: 40px 100px 80px 100px;
 
   .col-lg-3 div {
@@ -181,7 +111,7 @@ body {
   }
 }
 
-#homeThirdSection .row {
+.homeThirdSection .row {
   justify-content: center;
   padding-bottom: 80px;
   .col-md-3 {
@@ -207,7 +137,7 @@ body {
   }
 }
 
-#homeFourthSection .row.first_row {
+.homeFourthSection .row.first_row {
   justify-content: center;
   padding-bottom: 80px;
 
@@ -314,26 +244,10 @@ body {
   }
 }
 
-#homeFifthSection {
+.homeFifthSection {
   padding: 0;
 }
 
-#homeFifthSection img {
+.homeFifthSection img {
   width: 100%;
-}
-
-#homeFooterSection {
-  background-color: #d8d5a0;
-}
-
-#homeFooterSection ul {
-  list-style-type: none;
-}
-
-#homeFooterSection ul li a {
-  color: #000;
-  text-decoration: none;
-  display: inline-block;
-  padding-bottom: 5px;
-  font-size: 17px;
 }

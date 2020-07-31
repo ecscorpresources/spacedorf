@@ -2,10 +2,10 @@ import React, { lazy, Suspense } from "react";
 import "./App.scss";
 import { ThemeProvider } from "@chakra-ui/core";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./components/includes/Navbar/Navbar";
-import MySpinner from "./components/includes/MySpinner";
-import Footer from "./components/includes/Footer/Footer";
-const Homepage = lazy(() => import("./components/Homepage/Homepage"));
+import Navbar from "./components/Globals/Navbar/Navbar";
+import Spinner from "./components/Globals/Spinner";
+import Footer from "./components/Globals/Footer/Footer";
+const Homepage = lazy(() => import("./pages/Index"));
 const PropertyListing = lazy(() =>
   import("./components/PropertyListing/PropertyListing")
 );
@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       <ThemeProvider>
-        <Suspense fallback={<MySpinner />}>
+        <Suspense fallback={<Spinner />}>
           <Navbar />
           <Switch>
             <Route exact path="/" component={Homepage} />

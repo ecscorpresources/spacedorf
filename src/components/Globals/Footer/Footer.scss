@@ -1,0 +1,36 @@
+.footer {
+  background-color: #d8d5a0;
+}
+
+.footer {
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.footer ul li a {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 17px;
+}
+
+.footer .social-icons {
+  display: flex;
+  li:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.footer h5 {
+  padding-top: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 1.5rem;
+}

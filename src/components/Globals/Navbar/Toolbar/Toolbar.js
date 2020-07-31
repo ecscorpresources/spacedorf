@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Toolbar.css";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
+import { navbarlinks } from "../../../../constants/navlinks";
 
-const Toolbar = props => {
+const Toolbar = (props) => {
   return (
     <header className="toolbar">
       <nav className="toolbar_navigation">
@@ -15,21 +16,14 @@ const Toolbar = props => {
         <div className="toolbar_logo">
           <Link to="/">Spacedorf</Link>
         </div>
-        {/* <div className="spacer"></div> */}
+
         <div className="toolbar_navigation_items">
           <ul className="links">
-            <li>
-              <Link to="/properties_listing">Properties</Link>
-            </li>
-            <li>
-              <Link to="/agent">Features</Link>
-            </li>
-            <li>
-              <Link to="/premium_space">Rent an Event Hall</Link>
-            </li>
-            <li>
-              <Link to="/">Let's Talk</Link>
-            </li>
+            {navbarlinks.map((link, index) => (
+              <li key={index}>
+                <Link to={link.path}>{link.text}</Link>
+              </li>
+            ))}
           </ul>
           <ul className="login_signup">
             <li>

@@ -3,7 +3,7 @@ import React from "react";
 const Homepage = () => {
   return (
     <>
-      <div id="homeHeroSection" className="container-fluid">
+      <div className="homeHeroSection">
         <div className="row first_row">
           <div className="col-md-12">
             <h1>enjoy a perfect space</h1>
@@ -72,16 +72,16 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div id="homeFirstSection" className="container-fluid">
+      <div className="homeFirstSection">
         <div className="line"></div>
         <h1>EXPLORE PROPERTIES</h1>
       </div>
 
-      <div id="homeSecondSection" className="container-fluid">
+      <div className="homeSecondSection">
         <div className="row">
           <div className="col-10 col-sm-6 col-lg-3 my-2">
             <img
-              src={require("../../assets/img/2.jpg")}
+              src={require("../assets/img/2.jpg")}
               alt=""
               className="img-fluid"
             />
@@ -92,7 +92,7 @@ const Homepage = () => {
           </div>
           <div className="col-10 col-sm-6 col-lg-3 my-2">
             <img
-              src={require("../../assets/img/3.jpg")}
+              src={require("../assets/img/3.jpg")}
               alt=""
               className="img-fluid"
             />
@@ -103,7 +103,7 @@ const Homepage = () => {
           </div>
           <div className="col-10 col-sm-6 col-lg-3 my-2">
             <img
-              src={require("../../assets/img/4.jpg")}
+              src={require("../assets/img/4.jpg")}
               alt=""
               className="img-fluid"
             />
@@ -114,7 +114,7 @@ const Homepage = () => {
           </div>
           <div className="col-10 col-sm-6 col-lg-3 my-2">
             <img
-              src={require("../../assets/img/5.jpg")}
+              src={require("../assets/img/5.jpg")}
               alt=""
               className="img-fluid"
             />
@@ -125,11 +125,11 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-      <div id="homeThirdSection" className="container-fluid">
+      <div className="homeThirdSection">
         <div className="row">
           <div className="col-md-3">
             <div>
-              <img src={require("../../assets/img/6.png")} alt="" />
+              <img src={require("../assets/img/6.png")} alt="" />
               <h5>Locate an agent</h5>
               <h6>Let Us Help</h6>
               <p>
@@ -140,7 +140,7 @@ const Homepage = () => {
           </div>
           <div className="col-md-3">
             <div>
-              <img src={require("../../assets/img/7.png")} alt="" />
+              <img src={require("../assets/img/7.png")} alt="" />
               <h5>List a Property</h5>
               <h6>Sell that house...FAST</h6>
               <p>
@@ -151,7 +151,7 @@ const Homepage = () => {
           </div>
           <div className="col-md-3">
             <div>
-              <img src={require("../../assets/img/8.png")} alt="" />
+              <img src={require("../assets/img/8.png")} alt="" />
               <h5>Post a Request</h5>
               <h6>Don't see what you like?</h6>
               <p>
@@ -163,12 +163,12 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div id="homeFourthSection" className="container-fluid">
+      <div className="homeFourthSection">
         <div className="row first_row">
           <div className="col-md-10">
             <div className="row">
               <div className="col-md-5 image_div">
-                <img src={require("../../assets/img/9.png")} alt="" />
+                <img src={require("../assets/img/9.png")} alt="" />
                 <div>
                   <h4>small</h4>
                   <p>gatherings</p>
@@ -221,10 +221,10 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-      <div id="homeFifthSection" className="container-fluid">
+      <div className="homeFifthSection">
         <div className="row">
           <div className="col-md-12">
-            <img src={require("../../assets/img/10.png")} alt="" />
+            <img src={require("../assets/img/10.png")} alt="" />
           </div>
         </div>
       </div>
