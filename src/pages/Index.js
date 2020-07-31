@@ -1,76 +1,12 @@
 import React from "react";
+import SearchForm from "../components/Home/SearchForm";
 
 const Homepage = () => {
   return (
     <>
-      <div className="homeHeroSection">
-        <div className="row first_row">
-          <div className="col-md-12">
-            <h1>enjoy a perfect space</h1>
-            <p>your online source for premium apartment and workspace</p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-8">
-            <form>
-              <div className="row">
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    placeholder="Enter Choice Location - Suburb, State"
-                  />
-                </div>
-                <div className="col-md-3">
-                  <select name="" id="">
-                    <option value="" defaultValue>
-                      Property type
-                    </option>
-                    <option value="">Property Location</option>
-                  </select>
-                </div>
-                <div className="col-md-3">
-                  <select name="" id="">
-                    <option value="" defaultValue>
-                      For Sale
-                    </option>
-                    <option value="">Property Location</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className="row">
-                <div className="col-md-3">
-                  <select name="" id="">
-                    <option value="" defaultValue>
-                      BedRooms
-                    </option>
-                    <option value="">Property Location</option>
-                  </select>
-                </div>
-                <div className="col-md-3">
-                  <select name="" id="">
-                    <option value="" defaultValue>
-                      BathRooms
-                    </option>
-                    <option value="">BathRooms</option>
-                  </select>
-                </div>
-                <div className="col-md-3">
-                  <select name="" id="">
-                    <option value="" defaultValue>
-                      Price Range
-                    </option>
-                    <option value="">Property Location</option>
-                  </select>
-                </div>
-                <div className="col-md-3">
-                  <button type="submit">SEARCH</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+      <section className="homeHeroSection">
+        <SearchForm />
+      </section>
 
       <div className="homeFirstSection">
         <div className="line"></div>
