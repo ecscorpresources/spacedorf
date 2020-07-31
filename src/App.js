@@ -5,15 +5,11 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Globals/Navbar/Navbar";
 import Spinner from "./components/Globals/Spinner";
 import Footer from "./components/Globals/Footer/Footer";
-const Homepage = lazy(() => import("./pages/Index"));
-const PropertyListing = lazy(() =>
-  import("./components/PropertyListing/PropertyListing")
-);
-const PremiumSpace = lazy(() =>
-  import("./components/PremiumSpace/PremiumSpace")
-);
+const Homepage = lazy(() => import("./pages/index"));
+const Properties = lazy(() => import("./pages/properties"));
+const PremiumSpace = lazy(() => import("./pages/premiumspaces"));
 
-const Agent = lazy(() => import("./components/Agent/Agent"));
+const Agents = lazy(() => import("./pages/agents"));
 
 function App() {
   return (
@@ -24,13 +20,9 @@ function App() {
           <Switch>
             <Route exact path="/" component={Homepage} />
 
-            <Route exact path="/premium_space" component={PremiumSpace} />
-            <Route exact path="/agent" component={Agent} />
-            <Route
-              exact
-              path="/properties_listing"
-              component={PropertyListing}
-            />
+            <Route exact path="/premiumspaces" component={PremiumSpace} />
+            <Route exact path="/agents" component={Agents} />
+            <Route exact path="/properties" component={Properties} />
           </Switch>
           <Footer />
         </Suspense>

@@ -1,5 +1,5 @@
-#propertyFirstSection {
-  background: url("../../assets/img/11.png") center/cover no-repeat;
+#premiumspaceFirstSection {
+  background: url("../assets/img/11.png") center/cover no-repeat;
   height: 402px;
   margin-top: -89px;
   display: flex;
@@ -14,7 +14,7 @@
   }
 }
 
-#propertySecondSection .row.first_row {
+#premiumspaceSecondSection .row.first_row {
   justify-content: center;
   padding-top: 70px;
   padding-bottom: 10px;
@@ -27,7 +27,7 @@
   }
 }
 
-#propertyThirdSection .row.first_row {
+#premiumspaceThirdSection .row.first_row {
   justify-content: center;
 
   div.flex_container {
@@ -53,18 +53,14 @@
 
   ul.toilet_bathroom {
     display: flex;
+    justify-content: space-between;
     position: relative;
     top: 23px;
-
-    li {
-      padding-right: 20px;
-    }
 
     span {
       position: relative;
       top: 3px;
       font-weight: bold;
-      padding-left: 10px;
     }
   }
 
@@ -73,17 +69,17 @@
   }
 }
 
-#propertyThirdSection .col-md-8 .row.individual_row {
+#premiumspaceThirdSection .col-md-8 .row.individual_row {
   border: 2px solid #ddd;
   margin-bottom: 10px;
   margin-right: 2px;
 }
 
-#propertyThirdSection .col-md-8 .row.individual_row .col-md-8 {
+#premiumspaceThirdSection .col-md-8 .row.individual_row .col-md-8 {
   padding-left: 0;
 }
 
-#propertyThirdSection .col-md-8 .col-md-4 {
+#premiumspaceThirdSection .col-md-8 .col-md-4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -119,10 +115,10 @@
   }
 }
 
-#propertyThirdSection .col-md-2 {
+#premiumspaceThirdSection .col-md-2 {
   .row.first_row {
     background: #f8f8f8;
-    padding: 22px 0;
+    padding: 10px 0;
     border: 2px solid #ddd;
   }
 
@@ -138,6 +134,23 @@
     flex-direction: column;
 
     select {
+      background-color: #fff !important;
+      margin-bottom: 10px;
+      padding: 10px 0px 5px 5px;
+      border: 2px solid #ddd;
+      color: #6b7d87;
+      font-size: 14px;
+    }
+
+    a {
+      color: #000;
+      font-size: 14px;
+      text-align: center;
+      display: inline-block;
+      padding-top: 15px;
+    }
+
+    input {
       background-color: #fff !important;
       margin-bottom: 10px;
       padding: 10px 0px 5px 5px;
@@ -174,11 +187,12 @@
     }
   }
 
-  .col-md-6.extras_2 {
-    padding-left: 30px;
+  .col-md-6.facilities_1 {
+    padding-right: 0;
   }
 
-  img.advert_img {
-    width: 100%;
+  .col-md-6.facilities_2 {
+    margin-left: -6px;
+    padding: 0;
   }
 }

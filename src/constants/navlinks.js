@@ -6,16 +6,16 @@ export const navbarlinks = [
 
   {
     text: "Features",
-    path: "/features",
+    path: "/agents",
   },
 
   {
     text: "Rent an Event Hall",
-    path: "/rent",
+    path: "/premiumspaces",
   },
 
   {
     text: "Let's Talk",
-    path: "/contact",
+    path: "/",
   },
 ];

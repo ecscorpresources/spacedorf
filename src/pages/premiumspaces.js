@@ -1,5 +1,5 @@
 import React from "react";
-import "./PremiumSpace.scss";
+import "../styles/space.scss";
 import { Link } from "react-router-dom";
 
 const PremiumSpace = () => {
@@ -26,32 +26,32 @@ const PremiumSpace = () => {
               <div className="col-md-8">
                 <div className="flex_container">
                   <div className="image_div">
-                    <img src={require("../../assets/img/27.png")} alt="" />
+                    <img src={require("../assets/img/27.png")} alt="" />
                   </div>
                   <div>
                     <ul className="description">
                       <li>Laturo Conference Hall</li>
                       <li>
-                        <img src={require("../../assets/img/32.png")} alt="" />
+                        <img src={require("../assets/img/32.png")} alt="" />
                         <span>No. 9 Landie Ondo Str, Isolo, Lagos </span>
                       </li>
                       <li>
-                        <img src={require("../../assets/img/33.png")} alt="" />
+                        <img src={require("../assets/img/33.png")} alt="" />
                         <span>200 Guest Capacity</span>
                       </li>
                       <li>
-                        <img src={require("../../assets/img/34.png")} alt="" />
+                        <img src={require("../assets/img/34.png")} alt="" />
                         <span>Conference Hall</span>
                       </li>
                       <li>
-                        <img src={require("../../assets/img/35.png")} alt="" />
+                        <img src={require("../assets/img/35.png")} alt="" />
                         <span>20 Car Parking Capacity</span>
                       </li>
                     </ul>
 
                     <ul className="toilet_bathroom">
                       <li>
-                        <img src={require("../../assets/img/36.png")} alt="" />
+                        <img src={require("../assets/img/36.png")} alt="" />
                         <span> 4</span>
                       </li>
                     </ul>
@@ -64,7 +64,7 @@ const PremiumSpace = () => {
                 </div>
 
                 <div>
-                  <img src={require("../../assets/img/21.png")} alt="" />
+                  <img src={require("../assets/img/21.png")} alt="" />
                   <span className="amount">N 150k</span>
                   <Link to="monkhey">More Info...</Link>
                 </div>
@@ -75,34 +75,34 @@ const PremiumSpace = () => {
               <div className="col-md-8">
                 <div className="flex_container">
                   <div className="image_div">
-                    <img src={require("../../assets/img/28.png")} alt="" />
+                    <img src={require("../assets/img/28.png")} alt="" />
                   </div>
                   <div>
                     <ul className="description">
                       <li>Remisence Gardans</li>
                       <li>
-                        <img src={require("../../assets/img/32.png")} alt="" />
+                        <img src={require("../assets/img/32.png")} alt="" />
                         <span>No. 23 Hanson Road, Ikeja, Lagos</span>
                       </li>
                       <li>
-                        <img src={require("../../assets/img/33.png")} alt="" />
+                        <img src={require("../assets/img/33.png")} alt="" />
                         <span>400 Guest Capacity</span>
                       </li>
 
                       <li>
-                        <img src={require("../../assets/img/34.png")} alt="" />
+                        <img src={require("../assets/img/34.png")} alt="" />
                         <span>Outdoor</span>
                       </li>
 
                       <li>
-                        <img src={require("../../assets/img/35.png")} alt="" />
+                        <img src={require("../assets/img/35.png")} alt="" />
                         <span>50 Car Parking Capacity</span>
                       </li>
                     </ul>
 
                     <ul className="toilet_bathroom">
                       <li>
-                        <img src={require("../../assets/img/36.png")} alt="" />
+                        <img src={require("../assets/img/36.png")} alt="" />
                         <span> 4</span>
                       </li>
                     </ul>
@@ -115,7 +115,7 @@ const PremiumSpace = () => {
                 </div>
 
                 <div>
-                  <img src={require("../../assets/img/21.png")} alt="" />
+                  <img src={require("../assets/img/21.png")} alt="" />
                   <span className="amount">N 450k</span>
                   <Link to="monkhey">More Info...</Link>
                 </div>
@@ -126,33 +126,33 @@ const PremiumSpace = () => {
               <div className="col-md-8">
                 <div className="flex_container">
                   <div className="image_div">
-                    <img src={require("../../assets/img/29.png")} alt="" />
+                    <img src={require("../assets/img/29.png")} alt="" />
                   </div>
                   <div>
                     <ul className="description">
                       <li>Ords Bar</li>
                       <li>
-                        <img src={require("../../assets/img/32.png")} alt="" />
+                        <img src={require("../assets/img/32.png")} alt="" />
                         <span>No. 1 Alfred Osondu, Owerri, Imo</span>
                       </li>
                       <li>
-                        <img src={require("../../assets/img/33.png")} alt="" />
+                        <img src={require("../assets/img/33.png")} alt="" />
                         <span>30 Guest Capacity</span>
                       </li>
 
                       <li>
-                        <img src={require("../../assets/img/34.png")} alt="" />
+                        <img src={require("../assets/img/34.png")} alt="" />
                         <span>Meeting Room</span>
                       </li>
                       <li>
-                        <img src={require("../../assets/img/35.png")} alt="" />
+                        <img src={require("../assets/img/35.png")} alt="" />
                         <span>10 Car Parking Capacity</span>
                       </li>
                     </ul>
 
                     <ul className="toilet_bathroom">
                       <li>
-                        <img src={require("../../assets/img/36.png")} alt="" />
+                        <img src={require("../assets/img/36.png")} alt="" />
                         <span> 2</span>
                       </li>
                     </ul>
@@ -165,7 +165,7 @@ const PremiumSpace = () => {
                 </div>
 
                 <div>
-                  <img src={require("../../assets/img/21.png")} alt="" />
+                  <img src={require("../assets/img/21.png")} alt="" />
                   <span className="amount">N 65k</span>
                   <Link to="monkhey">More Info...</Link>
                 </div>
@@ -176,32 +176,32 @@ const PremiumSpace = () => {
               <div className="col-md-8">
                 <div className="flex_container">
                   <div className="image_div">
-                    <img src={require("../../assets/img/30.png")} alt="" />
+                    <img src={require("../assets/img/30.png")} alt="" />
                   </div>
                   <div>
                     <ul className="description">
                       <li>Phronesis Place</li>
                       <li>
-                        <img src={require("../../assets/img/32.png")} alt="" />
+                        <img src={require("../assets/img/32.png")} alt="" />
                         <span>No. 88 Pipeline Road, Warri, Delta</span>
                       </li>
                       <li>
-                        <img src={require("../../assets/img/33.png")} alt="" />
+                        <img src={require("../assets/img/33.png")} alt="" />
                         <span>600 Guest Capacity</span>
                       </li>
                       <li>
-                        <img src={require("../../assets/img/34.png")} alt="" />
+                        <img src={require("../assets/img/34.png")} alt="" />
                         <span>Marquee</span>
                       </li>
                       <li>
-                        <img src={require("../../assets/img/35.png")} alt="" />
+                        <img src={require("../assets/img/35.png")} alt="" />
                         <span>30 Car Parking Capacity</span>
                       </li>
                     </ul>
 
                     <ul className="toilet_bathroom">
                       <li>
-                        <img src={require("../../assets/img/36.png")} alt="" />
+                        <img src={require("../assets/img/36.png")} alt="" />
                         <span> 8</span>
                       </li>
                     </ul>
@@ -214,7 +214,7 @@ const PremiumSpace = () => {
                 </div>
 
                 <div>
-                  <img src={require("../../assets/img/21.png")} alt="" />
+                  <img src={require("../assets/img/21.png")} alt="" />
                   <span className="amount">N 350k</span>
                   <Link to="monkhey">More Info...</Link>
                 </div>
@@ -225,34 +225,34 @@ const PremiumSpace = () => {
               <div className="col-md-8">
                 <div className="flex_container">
                   <div className="image_div">
-                    <img src={require("../../assets/img/31.png")} alt="" />
+                    <img src={require("../assets/img/31.png")} alt="" />
                   </div>
                   <div>
                     <ul className="description">
                       <li>Plethora Hall</li>
                       <li>
-                        <img src={require("../../assets/img/32.png")} alt="" />
+                        <img src={require("../assets/img/32.png")} alt="" />
                         <span>No. 67 Gowon Road, Gowon Estate, Lagos</span>
                       </li>
 
                       <li>
-                        <img src={require("../../assets/img/33.png")} alt="" />
+                        <img src={require("../assets/img/33.png")} alt="" />
                         <span>700 Guest Capacity</span>
                       </li>
 
                       <li>
-                        <img src={require("../../assets/img/34.png")} alt="" />
+                        <img src={require("../assets/img/34.png")} alt="" />
                         <span>Event Hall</span>
                       </li>
                       <li>
-                        <img src={require("../../assets/img/35.png")} alt="" />
+                        <img src={require("../assets/img/35.png")} alt="" />
                         <span>50 Car Parking Capacity</span>
                       </li>
                     </ul>
 
                     <ul className="toilet_bathroom">
                       <li>
-                        <img src={require("../../assets/img/36.png")} alt="" />
+                        <img src={require("../assets/img/36.png")} alt="" />
                         <span> 8</span>
                       </li>
                     </ul>
@@ -265,7 +265,7 @@ const PremiumSpace = () => {
                 </div>
 
                 <div>
-                  <img src={require("../../assets/img/21.png")} alt="" />
+                  <img src={require("../assets/img/21.png")} alt="" />
                   <span className="amount">N 300k</span>
                   <Link to="monkhey">More Info...</Link>
                 </div>
@@ -413,7 +413,7 @@ const PremiumSpace = () => {
               </div>
             </div>
             <div className="row second_row">
-              {/* <img src={require("../../assets/img/26.png")} alt="" /> */}
+              {/* <img src={require("../assets/img/26.png")} alt="" /> */}
             </div>
           </div>
         </div>

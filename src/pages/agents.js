@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Agent.scss";
-import Pagination from "../Pagination/Pagination";
+import "../styles/agents.scss";
+import Pagination from "../components/Pagination/Pagination";
 
 const Agent = () => {
   return (
@@ -39,7 +39,7 @@ const Agent = () => {
           <div className="col-10 col-sm-6 col-md-6 col-lg-2">
             <div className="image_div">
               <img
-                src={require("../../assets/img/37.png")}
+                src={require("../assets/img/37.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -55,7 +55,7 @@ const Agent = () => {
             <div className="star_div">
               <Link to="/">View Profile</Link>
               <img
-                src={require("../../assets/img/49.png")}
+                src={require("../assets/img/49.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -64,7 +64,7 @@ const Agent = () => {
           <div className="col-10 col-sm-6 col-md-6 col-lg-2">
             <div className="image_div">
               <img
-                src={require("../../assets/img/38.png")}
+                src={require("../assets/img/38.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -80,7 +80,7 @@ const Agent = () => {
             <div className="star_div">
               <Link to="/">View Profile</Link>
               <img
-                src={require("../../assets/img/50.png")}
+                src={require("../assets/img/50.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -89,7 +89,7 @@ const Agent = () => {
           <div className="col-10 col-sm-6 col-md-6 col-lg-2">
             <div className="image_div">
               <img
-                src={require("../../assets/img/39.png")}
+                src={require("../assets/img/39.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -105,7 +105,7 @@ const Agent = () => {
             <div className="star_div">
               <Link to="/">View Profile</Link>
               <img
-                src={require("../../assets/img/51.png")}
+                src={require("../assets/img/51.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -114,7 +114,7 @@ const Agent = () => {
           <div className="col-10 col-sm-6 col-md-6 col-lg-2">
             <div className="image_div">
               <img
-                src={require("../../assets/img/40.png")}
+                src={require("../assets/img/40.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -130,7 +130,7 @@ const Agent = () => {
             <div className="star_div">
               <Link to="/">View Profile</Link>
               <img
-                src={require("../../assets/img/52.png")}
+                src={require("../assets/img/52.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -143,7 +143,7 @@ const Agent = () => {
         <div className="row">
           <div className="col-md-10">
             <img
-              src={require("../../assets/img/48.png")}
+              src={require("../assets/img/48.png")}
               alt=""
               className="img-fluid"
             />
@@ -156,7 +156,7 @@ const Agent = () => {
           <div className="col-10 col-sm-6 col-lg-2">
             <div className="image_div">
               <img
-                src={require("../../assets/img/41.png")}
+                src={require("../assets/img/41.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -172,7 +172,7 @@ const Agent = () => {
             <div className="star_div">
               <Link to="/">View Profile</Link>
               <img
-                src={require("../../assets/img/44.png")}
+                src={require("../assets/img/44.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -181,7 +181,7 @@ const Agent = () => {
           <div className="col-10 col-sm-6 col-lg-2">
             <div className="image_div">
               <img
-                src={require("../../assets/img/37.png")}
+                src={require("../assets/img/37.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -197,7 +197,7 @@ const Agent = () => {
             <div className="star_div">
               <Link to="/">View Profile</Link>
               <img
-                src={require("../../assets/img/45.png")}
+                src={require("../assets/img/45.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -206,7 +206,7 @@ const Agent = () => {
           <div className="col-10 col-sm-6 col-lg-2">
             <div className="image_div">
               <img
-                src={require("../../assets/img/42.png")}
+                src={require("../assets/img/42.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -222,7 +222,7 @@ const Agent = () => {
             <div className="star_div">
               <Link to="/">View Profile</Link>
               <img
-                src={require("../../assets/img/46.png")}
+                src={require("../assets/img/46.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -231,7 +231,7 @@ const Agent = () => {
           <div className="col-10 col-sm-6 col-md-6 col-lg-2">
             <div className="image_div">
               <img
-                src={require("../../assets/img/43.png")}
+                src={require("../assets/img/43.png")}
                 alt=""
                 className="img-fluid"
               />
@@ -247,7 +247,7 @@ const Agent = () => {
             <div className="star_div">
               <Link to="/">View Profile</Link>
               <img
-                src={require("../../assets/img/47.png")}
+                src={require("../assets/img/47.png")}
                 alt=""
                 className="img-fluid"
               />
