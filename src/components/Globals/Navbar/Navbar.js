@@ -1,24 +1,23 @@
 import React, { Component } from "react";
 import Toolbar from "./Toolbar/Toolbar";
 import SideDrawer from "./SideDrawer/SideDrawer";
-import "./Navbar.css";
 import Backdrop from "./Backdrop/Backdrop";
 import { withRouter } from "react-router-dom";
 
 class Navbar extends Component {
   state = {
-    SideDrawerOpen: false
+    SideDrawerOpen: false,
   };
   handleDrawerToggleClick = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return {
-        SideDrawerOpen: !prevState.SideDrawerOpen
+        SideDrawerOpen: !prevState.SideDrawerOpen,
       };
     });
   };
   handleBackdropClick = () => {
     this.setState({
-      SideDrawerOpen: false
+      SideDrawerOpen: false,
     });
   };
 

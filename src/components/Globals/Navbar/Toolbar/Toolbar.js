@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Toolbar.css";
+import "./Toolbar.scss";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import { navbarlinks } from "../../../../constants/navlinks";
 
@@ -18,19 +18,19 @@ const Toolbar = (props) => {
         </div>
 
         <div className="toolbar_navigation_items">
-          <ul className="links">
+          <ul className="nav-links">
             {navbarlinks.map((link, index) => (
               <li key={index}>
                 <Link to={link.path}>{link.text}</Link>
               </li>
             ))}
           </ul>
-          <ul className="login_signup">
+          <ul className="auth-links">
             <li>
-              <Link to="/">Sign Up</Link>
+              <Link to="/">SignUp</Link>
             </li>
             <li>
-              <Link to="/">Log In</Link>
+              <Link to="/">LogIn</Link>
             </li>
           </ul>
         </div>
