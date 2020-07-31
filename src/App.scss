@@ -99,117 +99,69 @@
   }
 }
 
-.homeFourthSection .row.first_row {
-  justify-content: center;
-  padding-bottom: 80px;
+.homeFourthSection {
+  background: #f5f5f5;
+  color: #fff;
+  width: 85vw;
+  margin: 7rem auto 7rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4rem 17rem 4rem 2rem;
+  column-gap: 7.5rem;
+  row-gap: 2rem;
 
-  .col-md-10 {
-    background-color: #f5f5f5;
-    padding: 20px 0px;
-  }
-
-  .col-md-10 .row {
-    padding-left: 20px;
-  }
-
-  .col-md-10 .col-md-5 img {
-    width: 100%;
-  }
-
-  .col-md-5.form_div div.text_div {
-    border-left: 2px solid #000;
-    padding-left: 25px;
-  }
-
-  .col-md-5.image_div {
+  .section-banner {
     position: relative;
-  }
-
-  .col-md-5.col-md-5.image_div div {
-    position: absolute;
-    position: absolute;
-    top: 27px;
-    left: 44px;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 30px 170px 30px 10px;
-    color: #fff;
-    width: 80%;
-    h4 {
-      font-size: 60px;
-    }
-
-    h2 {
-      font-size: 60px;
-    }
-    h5 {
-      padding-left: 114px;
-      font-size: 30px;
-      margin-bottom: 0;
-    }
-    p {
-      font-size: 18px;
-      border-bottom: 1px solid #fff;
-      padding-bottom: 10px;
+    img {
+      width: 100%;
     }
   }
 
-  .col-md-5.form_div {
+  .section-text {
+    position: absolute;
+    width: 86%;
+    top: 30px;
+    left: 30px;
+    right: 0;
+    bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+
+  .section-form {
     display: flex;
-    justify-content: center;
-    margin-left: 50px;
     align-items: center;
   }
 
-  form div {
-    margin-bottom: 10px;
+  .text {
+    width: 55%;
+
+    h4,
+    h5,
+    h2 {
+      font-weight: 100;
+    }
+
+    h4 {
+      font-size: 5rem;
+      margin-bottom: 1.5rem !important;
+    }
+
+    p {
+      font-size: 1.7rem;
+      margin-bottom: 1rem !important;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 1rem;
+    }
+
+    h5 {
+      font-size: 3rem;
+      text-align: right;
+    }
+    h2 {
+      font-size: 6rem;
+      text-align: right;
+    }
   }
-
-  form div.select_div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-  }
-
-  form input {
-    padding: 10px 0 10px 10px;
-    border: 1px solid grey;
-    color: grey !important;
-    width: 100%;
-  }
-
-  form select.guest {
-    padding: 10px 0 10px 10px;
-    border: 1px solid grey;
-    background-color: #fff !important;
-    color: grey !important;
-  }
-
-  form select.event {
-    padding: 10px 0 10px 10px;
-    border: 1px solid grey;
-    background-color: #fff !important;
-    color: grey !important;
-  }
-
-  form select.space {
-    padding: 10px 90px 10px 10px;
-    border: 1px solid grey;
-    background-color: #fff !important;
-    color: grey !important;
-  }
-
-  form button {
-    background-color: #30caa0;
-    border: none;
-    padding: 10px 44px 10px;
-    color: #fff;
-  }
-}
-
-.homeFifthSection {
-  padding: 0;
-}
-
-.homeFifthSection img {
-  width: 100%;
 }

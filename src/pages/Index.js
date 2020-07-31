@@ -2,6 +2,9 @@ import React from "react";
 import SearchForm from "../components/Home/SearchForm";
 import { featuredproperties } from "../data/properties";
 import { method } from "../data/method";
+import FindSpaceForm from "../components/Home/FindSpaceForm";
+import banner from "../assets/img/home/9.png";
+import banner2 from "../assets/img/home/10.png";
 
 const Homepage = () => {
   return (
@@ -49,69 +52,24 @@ const Homepage = () => {
       </section>
 
       <section className="homeFourthSection">
-        <div className="row first_row">
-          <div className="col-md-10">
-            <div className="row">
-              <div className="col-md-5 image_div">
-                <img src={require("../assets/img/9.png")} alt="" />
-                <div>
-                  <h4>small</h4>
-                  <p>gatherings</p>
-                  <h5>LARGE</h5>
-                  <h2>EVENTS</h2>
-                </div>
-              </div>
-              <div className="col-md-5 form_div">
-                <div>
-                  <div className="text_div">
-                    <p>
-                      Find and book a Space for your special events <br /> From
-                      over 5000 choice venues
-                    </p>
-                  </div>
-                  <div>
-                    <form>
-                      <div>
-                        <input
-                          type="text"
-                          placeholder="Enter Choice Location"
-                        />
-                      </div>
-                      <div className="select_div">
-                        <select name="" id="" className="guest">
-                          <option value="" defaultValue>
-                            No. Of Guests
-                          </option>
-                        </select>
-
-                        <select name="" id="" className="event">
-                          <option value="" defaultValue>
-                            Type of Event
-                          </option>
-                        </select>
-                      </div>
-                      <div className="select_div">
-                        <select name="" id="" className="space">
-                          <option value="" defaultValue>
-                            Type of Space
-                          </option>
-                        </select>
-                        <button type="submit">FIND A SPACE</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
+        <article className="section-banner">
+          <img src={banner} alt="events hall" />
+          <div className="section-text">
+            <div className="text">
+              <h4>small</h4>
+              <p>gatherings</p>
+              <h5>LARGE</h5>
+              <h2>EVENTS</h2>
             </div>
           </div>
-        </div>
+        </article>
+
+        <article className="section-form">
+          <FindSpaceForm />
+        </article>
       </section>
       <section className="homeFifthSection">
-        <div className="row">
-          <div className="col-md-12">
-            <img src={require("../assets/img/10.png")} alt="" />
-          </div>
-        </div>
+        <img className="img-fluid" src={banner2} alt="banner" />
       </section>
     </>
   );

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 class SearchForm extends Component {
+  state = {};
   render() {
     return (
       <FormWrapper>
