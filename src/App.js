@@ -2,13 +2,14 @@ import React, { lazy, Suspense } from "react";
 import "./App.scss";
 import { ThemeProvider } from "@chakra-ui/core";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./components/Globals/Navbar/Navbar";
 import Spinner from "./components/Globals/Spinner";
+
+import Navbar from "./components/Globals/Navbar/Navbar";
 import Footer from "./components/Globals/Footer/Footer";
+
 const Homepage = lazy(() => import("./pages/index"));
 const Properties = lazy(() => import("./pages/properties"));
 const PremiumSpace = lazy(() => import("./pages/premiumspaces"));
-
 const Agents = lazy(() => import("./pages/agents"));
 
 function App() {

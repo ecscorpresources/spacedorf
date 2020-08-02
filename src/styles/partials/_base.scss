@@ -7,6 +7,7 @@ select {
 }
 ul {
   list-style: none;
+  margin-bottom: 0 !important;
 }
 p,
 h1,
@@ -29,10 +30,6 @@ a {
     display: inline-block;
     color: #000;
   }
-}
-
-img {
-  display: block;
 }
 
 p {

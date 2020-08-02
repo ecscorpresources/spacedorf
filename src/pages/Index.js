@@ -1,6 +1,6 @@
 import React from "react";
 import SearchForm from "../components/Home/SearchForm";
-import { featuredproperties } from "../data/properties";
+import { featuredproperties } from "../data/featuredproperties";
 import { method } from "../data/method";
 import FindSpaceForm from "../components/Home/FindSpaceForm";
 import banner from "../assets/img/home/9.png";

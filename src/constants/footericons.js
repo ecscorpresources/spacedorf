@@ -1,8 +1,8 @@
-import facebook from "../assets/img/1cth.png";
-import youtube from "../assets/img/2cth.png";
-import linkedin from "../assets/img/3cth.png";
-import instagram from "../assets/img/4cth.png";
-import twitter from "../assets/img/5cth.png";
+import facebook from "../assets/img/footer/1cth.png";
+import youtube from "../assets/img/footer/2cth.png";
+import linkedin from "../assets/img/footer/3cth.png";
+import instagram from "../assets/img/footer/4cth.png";
+import twitter from "../assets/img/footer/5cth.png";
 
 export default [
   {
