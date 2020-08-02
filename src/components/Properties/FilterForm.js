@@ -85,12 +85,12 @@ const FilterWrapper = styled.section`
 
     select {
       background-color: #fff !important;
-      margin-bottom: 10px;
-      padding: 10px 0px 5px 5px;
+      margin-bottom: 1rem;
+      padding: 1rem 0 0.5rem 0.5rem;
       border: 1px solid #ddd;
       color: #6b7d87;
       width: 100%;
-      font-size: 14px;
+      font-size: 1.4rem;
     }
 
     p {
@@ -101,8 +101,8 @@ const FilterWrapper = styled.section`
 
     label {
       display: inline-block;
-      font-size: 11px;
-      margin-left: 6px;
+      font-size: 1.1rem;
+      margin-left: 0.6rem;
       font-weight: bold;
       color: #6b7d87;
     }
@@ -112,10 +112,10 @@ const FilterWrapper = styled.section`
       display: inline-block;
       background-color: #e36a37;
       border: none;
-      padding: 8px;
+      padding: 0.8rem;
       font-size: 14px;
-      letter-spacing: 2px;
-      margin-top: 20px;
+      letter-spacing: 0.2rem;
+      margin-top: 2rem;
     }
   }
 `;
