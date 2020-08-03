@@ -1,6 +1,6 @@
 import React from "react";
-import PropertyFilterForm from "../components/Properties/PropertyFilterForm";
-import Property from "../components/Property";
+import PremiumSpaceFilter from "../components/Properties/PremiumSpaceFilter";
+import PremiumSpace from "../components/PremiumSpace";
 import styled from "styled-components";
 
 const Properties = ({ properties }) => {
@@ -8,10 +8,10 @@ const Properties = ({ properties }) => {
     <PropertiesWrapper>
       <section>
         {properties.map((property) => (
-          <Property key={property.id} property={property} />
+          <PremiumSpace key={property.id} property={property} />
         ))}
       </section>
-      <PropertyFilterForm />
+      <PremiumSpaceFilter />
     </PropertiesWrapper>
   );
 };

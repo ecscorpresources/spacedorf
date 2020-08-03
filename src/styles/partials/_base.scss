@@ -20,8 +20,8 @@ h6 {
 }
 
 a {
-  text-decoration: none;
-  display: inline-block;
+  text-decoration: none !important;
+  display: inline-block !important;
   color: #000;
 
   &:hover {

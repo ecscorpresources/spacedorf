@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import banner from "../../assets/img/properties/26.png";
+import { FilterButton } from "../Globals/StyledComponents";
 
-class FilterForm extends Component {
+class PropertyFilterForm extends Component {
   state = {};
   render() {
     return (
@@ -60,7 +61,7 @@ class FilterForm extends Component {
                 </div>
               </div>
             </div>
-            <button type="submit">SEARCH</button>
+            <FilterButton type="submit">SEARCH</FilterButton>
           </form>
         </article>
 
@@ -94,9 +95,11 @@ const FilterWrapper = styled.section`
     }
 
     p {
+      margin-top: 1rem !important;
       margin-bottom: 1rem !important;
       font-weight: bold;
       color: #6b7d87;
+      font-size: 1.25rem;
     }
 
     label {
@@ -120,4 +123,4 @@ const FilterWrapper = styled.section`
   }
 `;
 
-export default FilterForm;
+export default PropertyFilterForm;

@@ -1,16 +1,14 @@
 import React from "react";
-import icon1 from "../assets/img/properties/13.png";
-import icon2 from "../assets/img/properties/14.png";
-import icon3 from "../assets/img/properties/15.png";
-import icon4 from "../assets/img/properties/16.png";
-import icon5 from "../assets/img/properties/17.png";
-import icon6 from "../assets/img/properties/18.png";
-import icon7 from "../assets/img/properties/19.png";
-import icon8 from "../assets/img/properties/20.png";
-import icon9 from "../assets/img/properties/21.png";
+import { Link } from "react-router-dom";
+import icon1 from "../assets/img/premiumspaces/32.png";
+import icon2 from "../assets/img/premiumspaces/33.png";
+import icon3 from "../assets/img/premiumspaces/34.png";
+import icon4 from "../assets/img/premiumspaces/35.png";
+import icon5 from "../assets/img/premiumspaces/36.png";
+import icon6 from "../assets/img/premiumspaces/21.png";
 import styled from "styled-components";
 import "../styles/properties.scss";
-import { PrimaryLink } from "../components/Globals/StyledComponents";
+import { PrimaryLink } from "./Globals/StyledComponents";
 
 const Property = ({ property }) => {
   return (
@@ -26,28 +24,16 @@ const Property = ({ property }) => {
               <img src={icon1} alt="icon" /> <span>{property.location}</span>
             </li>
             <li>
-              <img src={icon2} alt="icon" /> <span>{property.realtor}</span>
+              <img src={icon2} alt="icon" /> <span>{property.guest}</span>
             </li>
             <li>
               <img src={icon3} alt="icon" /> <span>{property.subtype}</span>
             </li>
-            {property.benefits ? (
-              <li>
-                <img src={icon4} alt="icon" /> <span>{property.benefits}</span>
-              </li>
-            ) : null}
-          </ul>
-
-          <ul>
             <li>
-              <img src={icon5} alt="icon" /> <span>{property.rooms}</span>
-            </li>
-
-            <li>
-              <img src={icon6} alt="icon" /> <span>{property.bathrooms}</span>
+              <img src={icon4} alt="icon" /> <span>{property.carcapacity}</span>
             </li>
             <li>
-              <img src={icon7} alt="icon" /> <span>{property.toilets}</span>
+              <img src={icon5} alt="icon" /> <span>{property.toilets}</span>
             </li>
           </ul>
         </div>
@@ -56,15 +42,15 @@ const Property = ({ property }) => {
       <div className="property-price-section">
         <ul>
           <li>
-            <img src={icon8} alt="icon" /> <span>{property.timeposted}</span>
+            <Link to="/agent">Overview</Link>
           </li>
           <li>
-            <img src={icon9} alt="icon" />
+            <img src={icon6} alt="icon" />
             <span className="price">&#8358;{property.price}</span>
           </li>
         </ul>
 
-        <PrimaryLink to="/agent">Contact Agent</PrimaryLink>
+        <PrimaryLink to="/agent">More Info...</PrimaryLink>
       </div>
     </PropertyWrapper>
   );
@@ -93,10 +79,6 @@ const PropertyWrapper = styled.section`
     }
 
     .details {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
 
     .details ul li {
@@ -113,21 +95,6 @@ const PropertyWrapper = styled.section`
         display: inline-block;
         font-size: 1.3rem;
         text-transform: capitalize;
-        margin-left: 1rem;
-      }
-    }
-
-    .details ul:nth-child(2) {
-      display: flex;
-
-      li:not(:last-child) {
-        margin-right: 8rem;
-      }
-
-      span {
-        font-weight: bold;
-        font-size: 1.5rem;
-        display: inline-block;
         margin-left: 1rem;
       }
     }
@@ -163,6 +130,11 @@ const PropertyWrapper = styled.section`
       font-size: 2.5rem;
       font-weight: bold;
       margin-bottom: 1rem;
+    }
+
+    a {
+      color: #333;
+      font-size: 1.5rem;
     }
   }
 `;
