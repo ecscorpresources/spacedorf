@@ -5,7 +5,7 @@ export const navbarlinks = [
   },
 
   {
-    text: "Features",
+    text: "Agents",
     path: "/agents",
   },
 

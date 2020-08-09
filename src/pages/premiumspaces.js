@@ -1,20 +1,20 @@
 import React from "react";
-import "../styles/properties.scss";
-import properties from "../data/premiumspaces";
 import PremiumSpaces from "../components/PremiumSpaces";
 import styled from "styled-components";
+import Hero from "../components/Globals/Hero";
+import smallhero from "../assets/img/11.png";
 
 const PropertyListing = () => {
   return (
     <>
-      <section className="propertyFirstSection">
+      <Hero img={smallhero}>
         <h1>Get a Premium Space</h1>
-      </section>
+      </Hero>
       <SectionWrapper>
         <article className="propertySecondSection">
           <h1>Search Results</h1>
         </article>
-        <PremiumSpaces properties={properties} />
+        <PremiumSpaces />
       </SectionWrapper>
     </>
   );

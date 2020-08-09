@@ -7,33 +7,47 @@ import icon4 from "../assets/img/premiumspaces/35.png";
 import icon5 from "../assets/img/premiumspaces/36.png";
 import icon6 from "../assets/img/premiumspaces/21.png";
 import styled from "styled-components";
-import "../styles/properties.scss";
 import { PrimaryLink } from "./Globals/StyledComponents";
 
 const Property = ({ property }) => {
+  const {
+    img,
+    type,
+    location,
+    guest,
+    subtype,
+    carcapacity,
+    utilities,
+    price,
+  } = property;
   return (
     <PropertyWrapper>
       <div>
-        <img className="img-fluid" src={property.img} alt={property.type} />
+        <Link
+          style={{ textDecoration: "none", color: "#000" }}
+          to="/premiumspaces"
+        >
+          <img className="img-fluid" src={img} alt={type} />
+        </Link>
       </div>
       <div className="property-description-section">
-        <h5>{property.type}</h5>
+        <h5>{type}</h5>
         <div className="details">
           <ul>
             <li>
-              <img src={icon1} alt="icon" /> <span>{property.location}</span>
+              <img src={icon1} alt="icon" /> <span>{location}</span>
             </li>
             <li>
-              <img src={icon2} alt="icon" /> <span>{property.guest}</span>
+              <img src={icon2} alt="icon" /> <span>{guest}</span>
             </li>
             <li>
-              <img src={icon3} alt="icon" /> <span>{property.subtype}</span>
+              <img src={icon3} alt="icon" /> <span>{subtype}</span>
             </li>
             <li>
-              <img src={icon4} alt="icon" /> <span>{property.carcapacity}</span>
+              <img src={icon4} alt="icon" /> <span>{carcapacity}</span>
             </li>
             <li>
-              <img src={icon5} alt="icon" /> <span>{property.toilets}</span>
+              <img src={icon5} alt="icon" /> <span>{utilities.toilets}</span>
             </li>
           </ul>
         </div>
@@ -46,7 +60,7 @@ const Property = ({ property }) => {
           </li>
           <li>
             <img src={icon6} alt="icon" />
-            <span className="price">&#8358;{property.price}</span>
+            <span className="price">&#8358;{price}</span>
           </li>
         </ul>
 

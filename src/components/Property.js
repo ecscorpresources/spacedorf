@@ -9,45 +9,70 @@ import icon7 from "../assets/img/properties/19.png";
 import icon8 from "../assets/img/properties/20.png";
 import icon9 from "../assets/img/properties/21.png";
 import styled from "styled-components";
-import "../styles/properties.scss";
 import { PrimaryLink } from "../components/Globals/StyledComponents";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Property = ({ property }) => {
+  const {
+    img,
+    type,
+    location,
+    realtor,
+    subtype,
+    benefits,
+    utilities,
+    timeposted,
+    price,
+  } = property;
   return (
     <PropertyWrapper>
       <div>
-        <img className="img-fluid" src={property.img} alt={property.type} />
+        <Link
+          style={{ textDecoration: "none", color: "#000" }}
+          to="/properties"
+        >
+          <img className="img-fluid" src={img} alt={type} />
+        </Link>
       </div>
       <div className="property-description-section">
-        <h5>{property.type}</h5>
+        <h5>{type}</h5>
         <div className="details">
-          <ul>
+          <ul className="location">
             <li>
-              <img src={icon1} alt="icon" /> <span>{property.location}</span>
+              <img src={icon1} alt="icon" /> <span>{location}</span>
             </li>
             <li>
-              <img src={icon2} alt="icon" /> <span>{property.realtor}</span>
+              <img src={icon2} alt="icon" /> <span>{realtor}</span>
             </li>
             <li>
-              <img src={icon3} alt="icon" /> <span>{property.subtype}</span>
+              <img src={icon3} alt="icon" /> <span>{subtype}</span>
             </li>
-            {property.benefits ? (
-              <li>
-                <img src={icon4} alt="icon" /> <span>{property.benefits}</span>
-              </li>
-            ) : null}
           </ul>
 
-          <ul>
+          {property.benefits ? (
+            <div className="d-flex">
+              <img className="mr-3" src={icon4} alt="benefits" />
+              <ul className="benefits">
+                {benefits.map((benefit, index) => (
+                  <li key={index}>
+                    <span>{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+
+          <ul className="utilities">
             <li>
-              <img src={icon5} alt="icon" /> <span>{property.rooms}</span>
+              <img src={icon5} alt="icon" /> <span>{utilities.rooms}</span>
             </li>
 
             <li>
-              <img src={icon6} alt="icon" /> <span>{property.bathrooms}</span>
+              <img src={icon6} alt="icon" /> <span>{utilities.bathrooms}</span>
             </li>
             <li>
-              <img src={icon7} alt="icon" /> <span>{property.toilets}</span>
+              <img src={icon7} alt="icon" /> <span>{utilities.toilets}</span>
             </li>
           </ul>
         </div>
@@ -56,11 +81,11 @@ const Property = ({ property }) => {
       <div className="property-price-section">
         <ul>
           <li>
-            <img src={icon8} alt="icon" /> <span>{property.timeposted}</span>
+            <img src={icon8} alt="icon" /> <span>{timeposted}</span>
           </li>
           <li>
             <img src={icon9} alt="icon" />
-            <span className="price">&#8358;{property.price}</span>
+            <span className="price">&#8358;{price}</span>
           </li>
         </ul>
 
@@ -104,7 +129,19 @@ const PropertyWrapper = styled.section`
       align-items: center;
     }
 
-    .details ul:first-child {
+    .details ul.benefits {
+      display: flex;
+
+      li:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+      span {
+        font-size: 1.3rem;
+        text-transform: capitalize;
+      }
+    }
+
+    .details ul.location {
       li:not(:last-child) {
         margin-bottom: 1rem;
       }
@@ -117,7 +154,7 @@ const PropertyWrapper = styled.section`
       }
     }
 
-    .details ul:nth-child(2) {
+    .details ul.utilities {
       display: flex;
 
       li:not(:last-child) {
@@ -166,5 +203,7 @@ const PropertyWrapper = styled.section`
     }
   }
 `;
+
+Property.propTypes = {};
 
 export default Property;

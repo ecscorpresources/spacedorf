@@ -1,20 +1,21 @@
 import React from "react";
-import "../styles/properties.scss";
-import properties from "../data/propertylisting";
 import Properties from "../components/Properties";
 import styled from "styled-components";
+import Hero from "../components/Globals/Hero";
+import smallhero from "../assets/img/11.png";
 
 const PropertyListing = () => {
   return (
     <>
-      <section className="propertyFirstSection">
+      <Hero img={smallhero}>
         <h1>Property Listing</h1>
-      </section>
+      </Hero>
+
       <SectionWrapper>
         <article className="propertySecondSection">
           <h1>Search Results</h1>
         </article>
-        <Properties properties={properties} />
+        <Properties />
       </SectionWrapper>
     </>
   );

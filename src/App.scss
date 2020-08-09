@@ -38,34 +38,36 @@
 }
 
 .homeSecondSection {
-  width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  justify-items: center;
+  .featured-properties {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    justify-items: center;
 
-  .property img {
-    display: block;
-  }
-
-  .property-description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #6b7d87;
-    padding: 1rem;
-
-    h4 {
-      font-size: 2rem;
-      text-transform: uppercase;
-      color: #fff;
+    .property img {
+      display: block;
     }
 
-    p {
-      color: #dfbd37;
-      font-size: 1.8rem;
-      font-weight: bold;
+    .property-description {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #6b7d87;
+      padding: 1rem;
+
+      h4 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+      p {
+        color: #dfbd37;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
     }
   }
 }

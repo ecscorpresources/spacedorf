@@ -1,34 +1,27 @@
 import React from "react";
 import SearchForm from "../components/Home/SearchForm";
-import { featuredproperties } from "../data/featuredproperties";
 import { method } from "../data/method";
 import FindSpaceForm from "../components/Home/FindSpaceForm";
 import banner from "../assets/img/home/9.png";
 import banner2 from "../assets/img/home/10.png";
+import Hero from "../components/Globals/Hero";
+import heroimg from "../assets/img/home/1.jpg";
+import FeaturedProperties from "../components/FeaturedProperties";
 
 const Homepage = () => {
   return (
     <>
-      <section className="homeHeroSection">
+      <Hero img={heroimg} home="true">
         <SearchForm />
-      </section>
+      </Hero>
 
       <section className="homeFirstSection">
         <div className="line"></div>
         <h1>EXPLORE PROPERTIES</h1>
       </section>
 
-      <section className="homeSecondSection">
-        {featuredproperties.map((property, index) => (
-          <div key={index} className="property">
-            <img className="img-fluid" src={property.img} alt="property" />
-            <div className="property-description">
-              <h4>{property.type}</h4>
-              <p>{property.number}</p>
-            </div>
-          </div>
-        ))}
-      </section>
+      <FeaturedProperties />
+
       <section className="homeThirdSection">
         {method.map((item, index) => (
           <div
