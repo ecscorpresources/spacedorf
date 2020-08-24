@@ -11,7 +11,7 @@ import icon9 from "../assets/img/properties/21.png";
 import styled from "styled-components";
 import { PrimaryLink } from "../components/Globals/StyledComponents";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 const Property = ({ property }) => {
   const {

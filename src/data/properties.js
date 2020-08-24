@@ -1,19 +1,27 @@
+import React from "react";
 import property1 from "../assets/img/properties/12.png";
 import property2 from "../assets/img/properties/22.png";
 import property3 from "../assets/img/properties/23.png";
 import property4 from "../assets/img/properties/24.png";
 import property5 from "../assets/img/properties/25.png";
 
-import property6 from "../assets/img/home/2.jpg";
-import property7 from "../assets/img/home/3.jpg";
-import property8 from "../assets/img/home/4.jpg";
-import property9 from "../assets/img/home/5.jpg";
+import property6 from "../assets/img/home/1.png";
+import property7 from "../assets/img/home/2.png";
+import property8 from "../assets/img/home/3.png";
+import property9 from "../assets/img/home/4.png";
 
 import property10 from "../assets/img/premiumspaces/27.png";
 import property11 from "../assets/img/premiumspaces/28.png";
 import property12 from "../assets/img/premiumspaces/29.png";
 import property13 from "../assets/img/premiumspaces/30.png";
 import property14 from "../assets/img/premiumspaces/31.png";
+
+const propertytext = (
+  <>
+    All you need to complete setup for your <br /> comfort, choosing from a
+    variety of <br /> charming & luxury well furnished <br /> apartment
+  </>
+);
 
 export const properties = [
   {
@@ -109,7 +117,7 @@ export const properties = [
   {
     id: 6,
     img: property6,
-    type: "house",
+    type: "short-let apartments",
     location: "along ibadan express way",
     realtor: "blessing aguele",
     subtype: "land",
@@ -123,12 +131,13 @@ export const properties = [
     number: 248,
     featured: true,
     premiumspace: false,
+    description: propertytext,
   },
 
   {
     id: 7,
     img: property7,
-    type: "apartment",
+    type: "work space",
     location: "along ibadan express way",
     realtor: "city homes",
     subtype: "land",
@@ -142,12 +151,13 @@ export const properties = [
     number: 336,
     premiumspace: false,
     featured: true,
+    description: "Funtional workspace",
   },
 
   {
     id: 8,
     img: property8,
-    type: "commercial",
+    type: "event space",
     location: "along ibadan express way",
     realtor: "bb realtors",
     subtype: "land",
@@ -161,12 +171,13 @@ export const properties = [
     number: 517,
     featured: true,
     premiumspace: false,
+    description: propertytext,
   },
 
   {
     id: 9,
     img: property9,
-    type: "land",
+    type: "home properties",
     location: "along ibadan express way",
     realtor: "samland investments co",
     subtype: "land",
@@ -180,6 +191,7 @@ export const properties = [
     number: 149,
     featured: true,
     premiumspace: false,
+    description: propertytext,
   },
 
   //   start

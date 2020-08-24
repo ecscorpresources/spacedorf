@@ -8,21 +8,10 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <section className="footer__links">
-          <div>
-            <h5>Looking For</h5>
-            <ul>
-              {footerlinks.links1.map((link, index) => (
-                <li key={index}>
-                  <Link to={link.path}>{link.text}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h5>Properties</h5>
-            <ul>
-              {footerlinks.links2.map((link, index) => (
+        <section>
+          <div style={{ marginBottom: "4rem" }}>
+            <ul className="d-flex justify-content-center links">
+              {footerlinks.map((link, index) => (
                 <li key={index}>
                   <Link to={link.path}>{link.text}</Link>
                 </li>
@@ -30,26 +19,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h5>Quick Assits</h5>
-            <ul>
-              {footerlinks.links3.map((link, index) => (
-                <li key={index}>
-                  <Link to={link.path}>{link.text}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h5>Have A Question ? </h5>
-            <ul>
-              {footerlinks.links4.map((link, index) => (
-                <li key={index}>
-                  <Link to={link.path}>{link.text}</Link>
-                </li>
-              ))}
-            </ul>
+          <div
+            style={{ marginBottom: "3rem" }}
+            className="d-flex align-items-center icons-section"
+          >
+            <h5 className="mr-4">Follow Us</h5>
             <ul className="social-icons">
               {footericons.map((icon, index) => (
                 <li key={index}>
@@ -62,7 +36,10 @@ const Footer = () => {
           </div>
         </section>
 
-        <p>Copyright &copy; {new Date().getFullYear()} All Rights Reserved.</p>
+        <p>
+          Copyright &copy; {new Date().getFullYear()} Spacedorf. All Rights
+          Reserved.
+        </p>
       </footer>
     </>
   );

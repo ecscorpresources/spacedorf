@@ -18,3 +18,17 @@ export const FilterButton = styled.button`
   letter-spacing: 0.2rem;
   margin-top: 2rem;
 `;
+
+export const Contact = styled(Link)`
+  color: #000;
+  border: 1px solid #000;
+  padding: 6px 22px;
+  font-size: 16px;
+  border-radius: 50px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
+`;

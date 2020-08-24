@@ -17,30 +17,16 @@
   justify-content: center;
 }
 
-.homeFirstSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 0;
-
-  .line {
-    width: 200px;
-    height: 2px;
-    border-top: 2px solid #ddd;
-    margin: 0 auto;
-  }
-  h1 {
-    font-size: 30px;
-    padding-top: 10px;
-    margin-bottom: 0;
-  }
-}
-
 .homeSecondSection {
-  .featured-properties {
-    width: 80vw;
-    margin: 0 auto;
+  width: 80vw;
+  margin: 4rem auto 10rem auto;
+
+  h5 {
+    margin-bottom: 4rem !important;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+  }
+  .properties {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
@@ -50,119 +36,85 @@
       display: block;
     }
 
-    .property-description {
+    .property {
+      position: relative;
+    }
+
+    .type {
+      position: absolute;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      background-color: #6b7d87;
-      padding: 1rem;
-
-      h4 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        color: #fff;
-      }
-
-      p {
-        color: #dfbd37;
-        font-size: 1.8rem;
-        font-weight: bold;
-      }
-    }
-  }
-}
-
-.homeThirdSection {
-  width: 60vw;
-  margin: 8rem auto 5rem auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  justify-items: center;
-
-  .method:not(:last-child) {
-    border-right: 2px solid #ddd;
-    padding-right: 2.5rem;
-  }
-
-  h4 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem !important;
-  }
-
-  h5 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem !important;
-  }
-
-  p {
-    font-size: 1.3rem;
-  }
-}
-
-.homeFourthSection {
-  background: #f5f5f5;
-  color: #fff;
-  width: 85vw;
-  margin: 7rem auto 7rem auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 4rem 17rem 4rem 2rem;
-  column-gap: 7.5rem;
-  row-gap: 2rem;
-
-  .section-banner {
-    position: relative;
-    img {
-      width: 100%;
-    }
-  }
-
-  .section-text {
-    position: absolute;
-    width: 86%;
-    top: 30px;
-    left: 30px;
-    right: 0;
-    bottom: 30px;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding-left: 2rem;
-    padding-top: 2rem;
-  }
-
-  .section-form {
-    display: flex;
-    align-items: center;
-  }
-
-  .text {
-    width: 55%;
-
-    h4,
-    h5,
-    h2 {
-      font-weight: 100;
     }
 
-    h4 {
-      font-size: 5rem;
-      margin-bottom: 1.5rem !important;
+    h6 {
+      font-size: 3rem;
+      color: #fff;
+      text-transform: capitalize;
+      font-weight: bold;
+      padding-left: 20px;
+      line-height: 1;
+    }
+
+    .description {
+      position: absolute;
+      background-color: #fff;
+      bottom: -70px;
+      padding: 1rem 3rem 1rem 0;
     }
 
     p {
-      font-size: 1.7rem;
-      margin-bottom: 1rem !important;
-      border-bottom: 1px solid #fff;
-      padding-bottom: 1rem;
+      font-size: 1.2rem;
     }
+  }
+}
 
-    h5 {
-      font-size: 3rem;
-      text-align: right;
-    }
-    h2 {
-      font-size: 6rem;
-      text-align: right;
-    }
+.searchpropertysection {
+  width: 85vw;
+  margin: 0 auto 5rem auto;
+}
+
+.propertybanner {
+  width: 60%;
+}
+
+.searchform {
+  width: 40%;
+  background-color: #f7f7f7;
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h5 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px !important;
+  }
+
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 10px !important;
+  }
+
+  select,
+  input,
+  button {
+    border: none;
+    padding: 1rem;
+  }
+}
+
+.contact-section {
+  padding: 1.5rem 12rem;
+  background-color: #f7f7f7;
+
+  h5 {
+    font-size: 1.7rem;
+    line-height: 1.6;
   }
 }

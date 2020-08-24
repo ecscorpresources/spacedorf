@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import banner from "../../assets/img/properties/26.png";
+// import banner from "../../assets/img/properties/26.png";
 import { FilterButton } from "../Globals/StyledComponents";
 
 class PropertyFilterForm extends Component {
@@ -65,9 +65,9 @@ class PropertyFilterForm extends Component {
           </form>
         </article>
 
-        <article>
+        {/* <article>
           <img src={banner} alt="baner" />
-        </article>
+        </article> */}
       </FilterWrapper>
     );
   }
