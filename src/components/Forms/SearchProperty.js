@@ -5,7 +5,7 @@ class SearchProperty extends Component {
     return (
       <article>
         <form>
-          <article>
+          <article className="d-flex flex-column align-items-center justify-content-center">
             <h5>Find a Property</h5>
             <p>
               All you need complete setup for your <br /> comfort, choosing from
@@ -13,7 +13,7 @@ class SearchProperty extends Component {
               apartment
             </p>
           </article>
-          <article className="d-flex align-items-baseline">
+          <article className="form-control-section">
             <select name="type">
               <option value="rent">Rent</option>
             </select>

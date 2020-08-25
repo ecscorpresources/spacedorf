@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PremiumSpaceFilter from "../components/Forms/PremiumSpaceFilter";
 import PremiumSpace from "../components/PremiumSpace";
-import { properties } from "../data/properties";
+import properties from "../data/eventcenters";
 import styled from "styled-components";
 import Spinner from "./Globals/Spinner";
 

@@ -10,11 +10,15 @@ import property7 from "../assets/img/home/2.png";
 import property8 from "../assets/img/home/3.png";
 import property9 from "../assets/img/home/4.png";
 
-import property10 from "../assets/img/premiumspaces/27.png";
-import property11 from "../assets/img/premiumspaces/28.png";
-import property12 from "../assets/img/premiumspaces/29.png";
-import property13 from "../assets/img/premiumspaces/30.png";
-import property14 from "../assets/img/premiumspaces/31.png";
+import agent1 from "../assets/img/agents/37.png";
+import agent2 from "../assets/img/agents/38.png";
+import agent3 from "../assets/img/agents/39.png";
+import agent4 from "../assets/img/agents/40.png";
+import agent5 from "../assets/img/agents/41.png";
+
+import agent6 from "../assets/img/agents/42.png";
+import agent7 from "../assets/img/agents/43.png";
+import agent8 from "../assets/img/agents/40.png";
 
 const propertytext = (
   <>
@@ -41,6 +45,18 @@ export const properties = [
     price: "88m",
     featured: false,
     premiumspace: false,
+
+    agent: {
+      id: 1,
+      img: agent1,
+      realtor: "stack homes estate management",
+      agent: "aisa baba",
+      email: "ab22@stackhomesmngt.com",
+      address: "No 3 ade street, ikota",
+      phone: "08098765432",
+      rating: 5.7,
+      reviews: 81,
+    },
   },
 
   {
@@ -59,6 +75,18 @@ export const properties = [
     price: "450k",
     featured: false,
     premiumspace: false,
+
+    agent: {
+      id: 2,
+      img: agent2,
+      realtor: "samson & sons",
+      agent: "samson daniel",
+      email: "dan@sansonandsonsltdl.com",
+      address: "No 27 new road",
+      phone: "08098765432",
+      rating: 8.7,
+      reviews: 3,
+    },
   },
 
   {
@@ -77,6 +105,18 @@ export const properties = [
     price: "50m",
     featured: false,
     premiumspace: false,
+
+    agent: {
+      id: 3,
+      img: agent3,
+      realtor: "whole homes management",
+      agent: "adebisis ogbomosho",
+      email: "wholehomesmg@gmail.com",
+      address: "No 1 red road lime estate",
+      phone: "08098765432",
+      rating: 5.7,
+      reviews: 81,
+    },
   },
 
   {
@@ -95,6 +135,18 @@ export const properties = [
     price: "95k",
     featured: false,
     premiumspace: false,
+
+    agent: {
+      id: 4,
+      img: agent4,
+      realtor: "rita james",
+      agent: "rita james",
+      email: "rita234@gmail.com",
+      address: "No 55 ajayi kingsley street",
+      phone: "08098765432",
+      rating: 5.7,
+      reviews: 9,
+    },
   },
 
   {
@@ -112,6 +164,18 @@ export const properties = [
     timeposted: "4 months ago",
     price: "300k",
     featured: false,
+
+    agent: {
+      id: 5,
+      img: agent5,
+      realtor: "greenland estate agency",
+      agent: "omolade adeshina",
+      email: "omo@greenlandest.com",
+      address: "No 3 Ade Street, Ikota",
+      phone: "08098765432",
+      rating: 8.2,
+      reviews: 15,
+    },
   },
 
   {
@@ -132,6 +196,18 @@ export const properties = [
     featured: true,
     premiumspace: false,
     description: propertytext,
+
+    agent: {
+      id: 6,
+      img: agent6,
+      realtor: "blessing aguele",
+      agent: "blessing aguele",
+      email: "blessing@gmail.com",
+      address: "No 27 new road",
+      phone: "08098765432",
+      rating: 4.6,
+      reviews: 4,
+    },
   },
 
   {
@@ -152,6 +228,18 @@ export const properties = [
     premiumspace: false,
     featured: true,
     description: "Funtional workspace",
+
+    agent: {
+      id: 7,
+      img: agent7,
+      realtor: "city homes",
+      agent: "emeka philips",
+      email: "cityhomes@gmail.com",
+      address: "No 1 red road lime estate",
+      phone: "08098765432",
+      rating: 6.5,
+      reviews: 29,
+    },
   },
 
   {
@@ -172,6 +260,18 @@ export const properties = [
     featured: true,
     premiumspace: false,
     description: propertytext,
+
+    agent: {
+      id: 8,
+      img: agent8,
+      realtor: "bb realtors",
+      agent: "emerald chika",
+      email: "chika@bbrealtors.com",
+      address: "No 55 Ajayi Kingley Street",
+      phone: "08098765432",
+      rating: 8.0,
+      reviews: 65,
+    },
   },
 
   {
@@ -192,102 +292,17 @@ export const properties = [
     featured: true,
     premiumspace: false,
     description: propertytext,
-  },
 
-  //   start
-  {
-    id: 10,
-    img: property10,
-    type: "laturo conference hall",
-    location: "no. 9 ondo str, isolo lagos",
-    guest: "200 guest capacity",
-    subtype: "conference hall",
-    carcapacity: "20 car parking capacity",
-    utilities: {
-      toilets: 4,
+    agent: {
+      id: 9,
+      img: agent8,
+      realtor: "bb realtors",
+      agent: "emerald chika",
+      email: "chika@bbrealtors.com",
+      address: "No 55 Ajayi Kingley Street",
+      phone: "08098765432",
+      rating: 8.0,
+      reviews: 65,
     },
-    price: "150m",
-    featured: false,
-    premiumspace: true,
-  },
-
-  {
-    id: 11,
-    img: property11,
-    type: "remisence gardens",
-    location: "no. 23 hanson road, ikeja lagos",
-    guest: "400 guest capacity",
-    subtype: "outdoor",
-    carcapacity: "50 car parking capacity",
-    utilities: {
-      toilets: 4,
-    },
-    price: "450m",
-    featured: false,
-    premiumspace: true,
-  },
-
-  {
-    id: 12,
-    img: property12,
-    type: "ords bar",
-    location: "no. 1 alfred osondu, owerri, imo",
-    guest: "30 guest capacity",
-    subtype: "meeting",
-    carcapacity: "10 car parking capacity",
-    utilities: {
-      toilets: 2,
-    },
-    price: "65",
-    featured: false,
-    premiumspace: true,
-  },
-
-  {
-    id: 13,
-    img: property13,
-    type: "phronesis place",
-    location: "no. 88 pipeline road, warri, delta",
-    guest: "600 guest capacity",
-    subtype: "marguee",
-    carcapacity: "30 car parking capacity",
-    utilities: {
-      toilets: 8,
-    },
-    price: "350",
-    featured: false,
-    premiumspace: true,
-  },
-
-  {
-    id: 14,
-    img: property14,
-    type: "phronesis place",
-    location: "no. 88 pipeline road, warri, delta",
-    guest: "600 guest capacity",
-    subtype: "marguee",
-    carcapacity: "30 car parking capacity",
-    utilities: {
-      toilets: 8,
-    },
-    price: "350",
-    featured: false,
-    premiumspace: true,
-  },
-
-  {
-    id: 15,
-    img: property14,
-    type: "plethora hall",
-    location: "no. 67 gowon road, gowon estate, lagos",
-    guest: "700 guest capacity",
-    subtype: "event hall",
-    carcapacity: "50 car parking capacity",
-    utilities: {
-      toilets: 8,
-    },
-    price: "500",
-    featured: false,
-    premiumspace: true,
   },
 ];

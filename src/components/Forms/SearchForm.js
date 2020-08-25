@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import dropdownicon from "../../assets/img/home/26.png";
 
 class SearchForm extends Component {
   state = {};
@@ -7,8 +8,8 @@ class SearchForm extends Component {
     return (
       <FormWrapper>
         <article>
-          <h1>enjoy a perfect space</h1>
-          <p>your online source for premium apartment and workspace</p>
+          <h4>enjoy a perfect space</h4>
+          <h6>your online source for premium apartment and workspace</h6>
         </article>
         <article className="d-flex form-section">
           <form>
@@ -74,26 +75,26 @@ class SearchForm extends Component {
 }
 
 const FormWrapper = styled.section`
-  h1 {
+  h4 {
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 6rem;
     color: #fff;
     font-weight: bold;
     text-align: center;
     margin-bottom: 1rem !important;
   }
 
-  p {
+  h6 {
     text-transform: uppercase;
-    font-size: 1.8rem;
-    font-weight: 100;
-    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: #d8d5a0;
     text-align: center;
-    margin-bottom: 1rem !important;
+    margin-bottom: 2rem !important;
   }
 
   form {
-    width: 60%;
+    width: 70%;
   }
 
   .form-section {
@@ -121,16 +122,34 @@ const FormWrapper = styled.section`
     input {
       width: 100%;
       padding: 1rem 0 1rem 1rem;
-      border: 1px solid #000;
       font-size: 1.3rem;
+      border: 1px solid #fff;
+    }
+
+    input {
+      padding: 1rem 0 1rem 15px;
+    }
+
+    select {
+      background-color: transparent !important;
+      color: #fff !important;
+      background-image: url(${dropdownicon});
+      background-repeat: no-repeat;
+      background-position: 94%, center;
+    }
+
+    input {
+      border: none;
+      border-radius: 50px;
     }
 
     button {
-      background: #30caa0;
+      background: #75a710;
       color: #fff;
       padding: 1rem;
-      border: none;
+      border-radius: 50px;
       font-size: 1.3rem;
+      border: none;
     }
   }
 `;

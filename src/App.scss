@@ -17,6 +17,10 @@
   justify-content: center;
 }
 
+.homeFirstSection {
+  margin: 5rem 0 10rem 0;
+}
+
 .homeSecondSection {
   width: 80vw;
   margin: 4rem auto 10rem auto;
@@ -62,9 +66,11 @@
 
     .description {
       position: absolute;
+      bottom: -40px;
       background-color: #fff;
-      bottom: -70px;
-      padding: 1rem 3rem 1rem 0;
+      min-height: 80px;
+      width: 90%;
+      padding-top: 10px;
     }
 
     p {
@@ -87,8 +93,8 @@
   background-color: #f7f7f7;
   margin: 4rem 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 
   h5 {
     font-size: 2.5rem;
@@ -105,16 +111,37 @@
   input,
   button {
     border: none;
-    padding: 1rem;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  select {
+    padding: 10px 10px 10px 5px;
+    background-image: url("./assets/img/home/27.png");
+    background-repeat: no-repeat;
+    background-position: 85%, center;
+  }
+
+  button {
+    background-color: #75a710;
+  }
+
+  .form-control-section {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    padding: 0 4rem;
+    gap: 5px;
   }
 }
 
 .contact-section {
   padding: 1.5rem 12rem;
-  background-color: #f7f7f7;
+  background-color: #d8d5a0;
 
   h5 {
     font-size: 1.7rem;
     line-height: 1.6;
+    color: #6b7d87;
   }
 }
