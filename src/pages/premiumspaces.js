@@ -1,5 +1,5 @@
 import React from "react";
-import PremiumSpaces from "../components/PremiumSpaces";
+import PremiumSpaces from "../components/PremiumSpace/PremiumSpaces";
 import styled from "styled-components";
 import Hero from "../components/Globals/Hero";
 import smallhero from "../assets/img/11.png";
@@ -11,9 +11,6 @@ const PropertyListing = () => {
         <h1>Get a Premium Space</h1>
       </Hero>
       <SectionWrapper>
-        <article className="propertySecondSection">
-          <h1>Search Results</h1>
-        </article>
         <PremiumSpaces />
       </SectionWrapper>
     </>

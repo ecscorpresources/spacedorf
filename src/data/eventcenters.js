@@ -5,9 +5,8 @@ import property13 from "../assets/img/premiumspaces/30.png";
 import property14 from "../assets/img/premiumspaces/31.png";
 
 export default [
-  //   start
   {
-    id: 10,
+    id: 1,
     img: property10,
     type: "laturo conference hall",
     location: "no. 9 ondo str, isolo lagos",
@@ -23,7 +22,7 @@ export default [
   },
 
   {
-    id: 11,
+    id: 2,
     img: property11,
     type: "remisence gardens",
     location: "no. 23 hanson road, ikeja lagos",
@@ -39,7 +38,7 @@ export default [
   },
 
   {
-    id: 12,
+    id: 3,
     img: property12,
     type: "ords bar",
     location: "no. 1 alfred osondu, owerri, imo",
@@ -55,7 +54,7 @@ export default [
   },
 
   {
-    id: 13,
+    id: 4,
     img: property13,
     type: "phronesis place",
     location: "no. 88 pipeline road, warri, delta",
@@ -71,7 +70,7 @@ export default [
   },
 
   {
-    id: 14,
+    id: 5,
     img: property14,
     type: "phronesis place",
     location: "no. 88 pipeline road, warri, delta",
@@ -87,7 +86,7 @@ export default [
   },
 
   {
-    id: 15,
+    id: 6,
     img: property14,
     type: "plethora hall",
     location: "no. 67 gowon road, gowon estate, lagos",

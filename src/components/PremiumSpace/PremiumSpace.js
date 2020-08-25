@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import icon1 from "../assets/img/premiumspaces/32.png";
-import icon2 from "../assets/img/premiumspaces/33.png";
-import icon3 from "../assets/img/premiumspaces/34.png";
-import icon4 from "../assets/img/premiumspaces/35.png";
-import icon5 from "../assets/img/premiumspaces/36.png";
-import icon6 from "../assets/img/premiumspaces/21.png";
+import icon1 from "../../assets/img/premiumspaces/32.png";
+import icon2 from "../../assets/img/premiumspaces/33.png";
+import icon3 from "../../assets/img/premiumspaces/34.png";
+import icon4 from "../../assets/img/premiumspaces/35.png";
+import icon5 from "../../assets/img/premiumspaces/36.png";
+import icon6 from "../../assets/img/premiumspaces/21.png";
 import styled from "styled-components";
-import { PrimaryLink } from "./Globals/StyledComponents";
+import { PrimaryLink } from "../Globals/StyledComponents";
 
 const Property = ({ property }) => {
   const {

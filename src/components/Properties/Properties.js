@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import PropertyFilterForm from "../components/Forms/PropertyFilterForm";
-import Property from "../components/Property";
-import { properties } from "../data/properties";
+import PropertyFilterForm from "../Forms/PropertyFilterForm";
+import Property from "../Properties/Property";
+import { properties } from "../../data/properties";
 import styled from "styled-components";
-import Spinner from "./Globals/Spinner";
+import Spinner from "../Globals/Spinner";
 
 class Properties extends Component {
   state = {

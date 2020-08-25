@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { properties } from "../data/properties";
-import Spinner from "../components/Globals/Spinner";
+import { properties } from "../../data/properties";
+import Spinner from "../../components/Globals/Spinner";
 
 class FeaturedProperties extends Component {
   state = {

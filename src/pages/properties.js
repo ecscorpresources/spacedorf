@@ -1,5 +1,5 @@
 import React from "react";
-import Properties from "../components/Properties";
+import Properties from "../components/Properties/Properties";
 import styled from "styled-components";
 import Hero from "../components/Globals/Hero";
 import smallhero from "../assets/img/11.png";
@@ -12,9 +12,6 @@ const PropertyListing = () => {
       </Hero>
 
       <SectionWrapper>
-        <article className="propertySecondSection">
-          <h1>Search Results</h1>
-        </article>
         <Properties />
       </SectionWrapper>
     </>

@@ -1,15 +1,15 @@
 import React from "react";
-import icon1 from "../assets/img/properties/13.png";
-import icon2 from "../assets/img/properties/14.png";
-import icon3 from "../assets/img/properties/15.png";
-import icon4 from "../assets/img/properties/16.png";
-import icon5 from "../assets/img/properties/17.png";
-import icon6 from "../assets/img/properties/18.png";
-import icon7 from "../assets/img/properties/19.png";
-import icon8 from "../assets/img/properties/20.png";
-import icon9 from "../assets/img/properties/21.png";
+import icon1 from "../../assets/img/properties/13.png";
+import icon2 from "../../assets/img/properties/14.png";
+import icon3 from "../../assets/img/properties/15.png";
+import icon4 from "../../assets/img/properties/16.png";
+import icon5 from "../../assets/img/properties/17.png";
+import icon6 from "../../assets/img/properties/18.png";
+import icon7 from "../../assets/img/properties/19.png";
+import icon8 from "../../assets/img/properties/20.png";
+import icon9 from "../../assets/img/properties/21.png";
 import styled from "styled-components";
-import { PrimaryLink } from "../components/Globals/StyledComponents";
+import { PrimaryLink } from "../../components/Globals/StyledComponents";
 import { Link } from "react-router-dom";
 // import PropTypes from "prop-types";
 

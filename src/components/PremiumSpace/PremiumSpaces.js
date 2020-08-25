@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import PremiumSpaceFilter from "../components/Forms/PremiumSpaceFilter";
-import PremiumSpace from "../components/PremiumSpace";
-import properties from "../data/eventcenters";
+import PremiumSpaceFilter from "../Forms/PremiumSpaceFilter";
+import PremiumSpace from "../PremiumSpace/PremiumSpace";
+import properties from "../../data/eventcenters";
 import styled from "styled-components";
-import Spinner from "./Globals/Spinner";
+import Spinner from "../Globals/Spinner";
 
 class Properties extends Component {
   state = {
@@ -16,9 +16,6 @@ class Properties extends Component {
     });
   }
   render() {
-    const premiumspaces = this.state.properties.filter(
-      (property) => property.premiumspace === true
-    );
     return (
       <>
         {this.state.properties.length === 0 ? (
@@ -26,7 +23,7 @@ class Properties extends Component {
         ) : (
           <PropertiesWrapper>
             <section>
-              {premiumspaces.map((property) => (
+              {this.state.properties.map((property) => (
                 <PremiumSpace key={property.id} property={property} />
               ))}
             </section>
