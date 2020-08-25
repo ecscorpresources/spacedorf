@@ -21,5 +21,6 @@ export default styled(Hero)`
     font-size: 4rem;
     padding-top: 10rem;
     padding-left: 5rem;
+    font-family: NexaBold;
   }
 `;

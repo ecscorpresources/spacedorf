@@ -1,6 +1,5 @@
 import React from "react";
 import Properties from "../components/Properties/Properties";
-import styled from "styled-components";
 import Hero from "../components/Globals/Hero";
 import smallhero from "../assets/img/11.png";
 
@@ -11,25 +10,11 @@ const PropertyListing = () => {
         <h1>Property Listing</h1>
       </Hero>
 
-      <SectionWrapper>
+      <section>
         <Properties />
-      </SectionWrapper>
+      </section>
     </>
   );
 };
-
-const SectionWrapper = styled.section`
-  width: 85vw;
-  margin: 4rem auto;
-
-  .propertySecondSection {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    h1 {
-      font-size: 25px;
-    }
-  }
-`;
 
 export default PropertyListing;

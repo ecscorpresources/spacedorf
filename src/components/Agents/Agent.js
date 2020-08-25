@@ -7,7 +7,7 @@ import { MdStar } from "react-icons/md";
 const Agent = ({ agent }) => {
   return (
     <>
-      <AgentWrapper className="agent">
+      <AgentWrapper className="agent d-flex flex-column justify-content-between">
         <div>
           <img className="avatar img-fluid mb-3 " src={agent.img} alt="agent" />
           <h2 className="text-capitalize realtor">{agent.realtor}</h2>
@@ -17,7 +17,9 @@ const Agent = ({ agent }) => {
           <p className="phone">{agent.phone}</p>
         </div>
         <div className="d-flex justify-content-between align-items-center">
-          <ViewProfile to="/">View Profile</ViewProfile>
+          <ViewProfile to={`/agent/${agent.agent.replace(/\s+/g, "")}`}>
+            View Properties
+          </ViewProfile>
           <div>
             <MdStar className="rating" />
             <MdStar className="rating" />
@@ -43,6 +45,8 @@ const AgentWrapper = styled.article`
 
   .agent {
     margin-bottom: 7rem !important;
+    font-size: 12px;
+    font-weight: 600;
   }
 
   .email,

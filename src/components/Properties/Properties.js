@@ -34,6 +34,8 @@ class Properties extends Component {
 }
 
 const PropertiesWrapper = styled.section`
+  width: 85vw;
+  margin: 4rem auto;
   display: grid;
   grid-template-columns: 3fr 1fr;
   column-gap: 2rem;

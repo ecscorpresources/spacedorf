@@ -107,7 +107,7 @@ export default [
       id: 3,
       img: agent3,
       realtor: "whole homes management",
-      agent: "adebisis ogbomosho",
+      agent: "adebisi ogbomosho",
       email: "wholehomesmg@gmail.com",
       address: "No 1 red road lime estate",
       phone: "08098765432",

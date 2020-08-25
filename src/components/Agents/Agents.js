@@ -17,7 +17,6 @@ class Agents extends Component {
 
   render() {
     const agents = this.state.properties.map((property) => property.agent);
-    console.log(agents);
     return (
       <>
         {this.state.properties.length === 0 ? (

@@ -28,7 +28,7 @@ const Wrapper = styled.section`
     font-size: 4rem;
     padding-top: 10rem;
     margin-bottom: 10px !important;
-    font-weight: 600;
+    font-family: NexaBold;
   }
 
   input {

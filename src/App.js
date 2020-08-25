@@ -11,6 +11,7 @@ const Homepage = lazy(() => import("./pages/index"));
 const Properties = lazy(() => import("./pages/properties"));
 const PremiumSpace = lazy(() => import("./pages/premiumspaces"));
 const Agents = lazy(() => import("./pages/agents"));
+const AgentProperties = lazy(() => import("./components/Agents/Properties"));
 
 function App() {
   return (
@@ -20,10 +21,10 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Homepage} />
-
             <Route exact path="/premiumspaces" component={PremiumSpace} />
             <Route exact path="/agents" component={Agents} />
             <Route exact path="/properties" component={Properties} />
+            <Route exact path="/agent/:name" component={AgentProperties} />
           </Switch>
           <Footer />
         </Suspense>

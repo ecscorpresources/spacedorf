@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 
 export const PrimaryLink = styled(Link)`
   color: #fff !important;
-  background-color: #333;
+  background-color: #ccc8bf;
   text-align: center;
-  padding: 0.6rem 3rem;
-  font-size: 1.5rem;
+  padding: 0.6rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
 `;
 
 export const FilterButton = styled.button`
