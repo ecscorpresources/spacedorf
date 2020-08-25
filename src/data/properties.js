@@ -27,7 +27,7 @@ const propertytext = (
   </>
 );
 
-export const properties = [
+export default [
   {
     id: 1,
     img: property1,

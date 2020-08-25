@@ -77,16 +77,17 @@ class SearchForm extends Component {
 const FormWrapper = styled.section`
   h4 {
     text-transform: uppercase;
-    font-size: 6rem;
+    font-size: 5rem;
     color: #fff;
     font-weight: bold;
     text-align: center;
     margin-bottom: 1rem !important;
+    font-family: NexaBold;
   }
 
   h6 {
     text-transform: uppercase;
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     font-weight: 400;
     color: #d8d5a0;
     text-align: center;

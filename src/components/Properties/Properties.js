@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropertyFilterForm from "../Forms/PropertyFilterForm";
 import Property from "../Properties/Property";
-import { properties } from "../../data/properties";
+import properties from "../../data/properties";
 import styled from "styled-components";
 import Spinner from "../Globals/Spinner";
 
