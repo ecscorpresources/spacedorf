@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { PrimaryLink } from "../Globals/StyledComponents";
+import { MdStar } from "react-icons/md";
 // import PropTypes from "prop-types";
 
 const Agent = ({ agent }) => {
@@ -15,8 +16,15 @@ const Agent = ({ agent }) => {
           <h6 className="address">{agent.address}</h6>
           <p className="phone">{agent.phone}</p>
         </div>
-        <div>
-          <PrimaryLink to="/">View Profile</PrimaryLink>
+        <div className="d-flex justify-content-between align-items-center">
+          <ViewProfile to="/">View Profile</ViewProfile>
+          <div>
+            <MdStar className="rating" />
+            <MdStar className="rating" />
+            <MdStar className="rating" />
+            <MdStar className="rating" />
+            <MdStar className="rating" />
+          </div>
         </div>
       </AgentWrapper>
     </>
@@ -34,7 +42,7 @@ const AgentWrapper = styled.article`
   }
 
   .agent {
-    margin-bottom: 8rem !important;
+    margin-bottom: 7rem !important;
   }
 
   .email,
@@ -44,6 +52,14 @@ const AgentWrapper = styled.article`
     font-weight: 600;
     margin-bottom: 20px !important;
   }
+  .rating {
+    font-size: 13px;
+  }
+`;
+
+const ViewProfile = styled(PrimaryLink)`
+  padding: 5px 18px;
+  font-size: 14px;
 `;
 
 Agent.propTypes = {};

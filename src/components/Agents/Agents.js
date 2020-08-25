@@ -35,7 +35,7 @@ class Agents extends Component {
 }
 
 const AgentsWrapper = styled.section`
-  width: 85vw;
+  width: 75vw;
   margin: 10rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
