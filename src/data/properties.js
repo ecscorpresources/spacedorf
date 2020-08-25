@@ -8,9 +8,7 @@ import property5 from "../assets/img/properties/25.png";
 import property6 from "../assets/img/home/1.png";
 import property7 from "../assets/img/home/2.png";
 import property8 from "../assets/img/home/3.png";
-import property9 from "../assets/img/home/4.png";
 
-import agent1 from "../assets/img/agents/37.png";
 import agent2 from "../assets/img/agents/38.png";
 import agent3 from "../assets/img/agents/39.png";
 import agent4 from "../assets/img/agents/40.png";
@@ -18,7 +16,6 @@ import agent5 from "../assets/img/agents/41.png";
 
 import agent6 from "../assets/img/agents/42.png";
 import agent7 from "../assets/img/agents/43.png";
-import agent8 from "../assets/img/agents/40.png";
 
 const propertytext = (
   <>
@@ -48,7 +45,7 @@ export default [
 
     agent: {
       id: 1,
-      img: agent1,
+      img: agent4,
       realtor: "stack homes estate management",
       agent: "aisa baba",
       email: "ab22@stackhomesmngt.com",
@@ -263,39 +260,7 @@ export default [
 
     agent: {
       id: 8,
-      img: agent8,
-      realtor: "bb realtors",
-      agent: "emerald chika",
-      email: "chika@bbrealtors.com",
-      address: "No 55 Ajayi Kingley Street",
-      phone: "08098765432",
-      rating: 8.0,
-      reviews: 65,
-    },
-  },
-
-  {
-    id: 9,
-    img: property9,
-    type: "home properties",
-    location: "along ibadan express way",
-    realtor: "samland investments co",
-    subtype: "land",
-    utilities: {
-      rooms: 0,
-      bathrooms: 0,
-      toilets: 0,
-    },
-    timeposted: "4 months ago",
-    price: "300k",
-    number: 149,
-    featured: true,
-    premiumspace: false,
-    description: propertytext,
-
-    agent: {
-      id: 9,
-      img: agent8,
+      img: agent7,
       realtor: "bb realtors",
       agent: "emerald chika",
       email: "chika@bbrealtors.com",

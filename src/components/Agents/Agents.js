@@ -23,20 +23,20 @@ class Agents extends Component {
         {this.state.properties.length === 0 ? (
           <Spinner />
         ) : (
-          <PropertiesWrapper>
-            <section>
-              {this.state.properties.map((property) => (
-                <Agent key={property.id} property={property} />
-              ))}
-            </section>
-          </PropertiesWrapper>
+          <AgentsWrapper>
+            {agents.map((agent) => (
+              <Agent key={agent.id} agent={agent} />
+            ))}
+          </AgentsWrapper>
         )}
       </>
     );
   }
 }
 
-const PropertiesWrapper = styled.section`
+const AgentsWrapper = styled.section`
+  width: 85vw;
+  margin: 10rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 2rem;

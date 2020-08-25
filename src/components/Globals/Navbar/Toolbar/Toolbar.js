@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Toolbar.scss";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import { navbarlinks } from "../../../../constants/navlinks";
+import logo from "../../../../assets/img/home/Spacedorflogo.png";
 
 const Toolbar = (props) => {
   return (
@@ -14,7 +15,9 @@ const Toolbar = (props) => {
           />
         </div>
         <div className="toolbar_logo">
-          <Link to="/">Spacedorf</Link>
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
 
         <div className="toolbar_navigation_items">
