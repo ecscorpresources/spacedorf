@@ -1,8 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import FadeIn from "react-fade-in";
 import {
-  GRID,
   HALFGRID,
   EQUALGRID,
   Select,
@@ -12,76 +11,99 @@ import { MdPhotoCamera } from "react-icons/md";
 import styled from "styled-components";
 import icon from "../../assets/img/99.png";
 
-const Profile = () => {
-  return (
-    <>
-      <FadeIn transitionDuration="600">
-        <Helmet>
-          <title>dashboard</title>
-        </Helmet>
+class Profile extends Component {
+  render() {
+    return (
+      <>
+        <FadeIn transitionDuration="600">
+          <Helmet>
+            <title>dashboard</title>
+          </Helmet>
 
-        <ProfileWrapper className="settingsFirstSection">
-          <div>
-            <p>Profile Info</p>
+          <ProfileWrapper>
+            <div>
+              <form>
+                <EQUALGRID>
+                  <Select>
+                    <option value="Country">Country</option>
+                  </Select>
+                  <TextInput type="text" placeholder="About Company" />
+                </EQUALGRID>
 
-            <form>
-              <EQUALGRID>
-                <TextInput type="text" placeholder="First Name" />
-                <TextInput placeholder="Last Name" />
-              </EQUALGRID>
+                <EQUALGRID>
+                  <TextInput type="text" placeholder="FIrst Name" />
+                  <TextInput type="text" placeholder="Last Name" />
+                </EQUALGRID>
 
-              <EQUALGRID>
-                <TextInput type="text" placeholder="Username" />
-                <TextInput type="text" placeholder="Company Name" />
-              </EQUALGRID>
+                <EQUALGRID>
+                  <TextInput type="text" placeholder="Phone No" />
+                  <TextInput type="email" placeholder="Email" />
+                </EQUALGRID>
 
-              <GRID>
-                <TextInput type="email" placeholder="Company Name" />
-              </GRID>
+                <EQUALGRID>
+                  <Select>
+                    <option value="State">State</option>
+                  </Select>
+                  <Select>
+                    <option value="City">City</option>
+                  </Select>
+                </EQUALGRID>
 
-              <EQUALGRID>
-                <Select>
-                  <option value="Country">Country</option>
-                </Select>
-                <TextInput type="text" placeholder="Country Code" />
-              </EQUALGRID>
+                <EQUALGRID>
+                  <TextInput type="agency" placeholder="Agency Association" />
+                  <TextInput
+                    type="text"
+                    placeholder="Association Chairman Fullname"
+                  />
+                </EQUALGRID>
 
-              <EQUALGRID>
-                <TextInput type="text" placeholder="State/Province" />
-                <TextInput type="text" placeholder="City" />
-              </EQUALGRID>
+                <EQUALGRID>
+                  <TextInput
+                    type="charimancontact"
+                    placeholder="Chairman Contact"
+                  />
+                  <TextInput type="text" />
+                </EQUALGRID>
 
-              <GRID>
-                <TextInput type="email" placeholder="Address" />
-              </GRID>
-              <HALFGRID>
-                <section className="file">
-                  <h5>Avatar</h5>
-                  <article>
-                    <div>
-                      <input
-                        type="file"
-                        name="profileimage"
-                        id="profileimage"
-                      />
-                      <label htmlFor="profileimage">
-                        <MdPhotoCamera className="file-icon" /> Upload Profile
-                        Image
-                      </label>
-                    </div>
-                  </article>
-                </section>
-              </HALFGRID>
-              <article>
-                <button type="submit">Upload Profile</button>
-              </article>
-            </form>
-          </div>
-        </ProfileWrapper>
-      </FadeIn>
-    </>
-  );
-};
+                <EQUALGRID>
+                  <TextInput
+                    type="charimancontact"
+                    placeholder="Upload Govt Approved Credential"
+                  />
+
+                  <TextInput
+                    type="charimancontact"
+                    placeholder="Upload Agency Certificate"
+                  />
+                </EQUALGRID>
+                <HALFGRID>
+                  <section className="file">
+                    <article>
+                      <div>
+                        <input
+                          type="file"
+                          name="profileimage"
+                          id="profileimage"
+                        />
+                        <label htmlFor="profileimage">
+                          <MdPhotoCamera className="file-icon" /> Upload Profile
+                          Image
+                        </label>
+                      </div>
+                    </article>
+                  </section>
+                </HALFGRID>
+                <article>
+                  <button type="submit">Update Profile</button>
+                </article>
+              </form>
+            </div>
+          </ProfileWrapper>
+        </FadeIn>
+      </>
+    );
+  }
+}
 
 const ProfileWrapper = styled.section`
   width: 45vw;
@@ -122,7 +144,7 @@ const ProfileWrapper = styled.section`
 
   button {
     color: #fff;
-    background-color: #094a6a;
+    background-color: #243137;
     border: none;
     text-decoration: none;
     text-align: center;
@@ -130,7 +152,7 @@ const ProfileWrapper = styled.section`
     font-size: 1.5rem;
     padding: 0.8rem 4rem;
     font-family: "Open Sans", sans-serif;
-    border-radius: 4px;
+    border-radius: 50px;
   }
 
   select {

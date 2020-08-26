@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import FadeIn from "react-fade-in";
 import { HALFGRID, TextInput } from "../Globals/StyledComponents";
 import styled from "styled-components";
-import icon from "../../assets/img/99.png";
 
 const Settings = () => {
   return (
@@ -18,11 +17,11 @@ const Settings = () => {
             <p>Change Password</p>
             <form>
               <HALFGRID>
-                <TextInput type="text" placeholder="Current Password" />
+                <TextInput type="text" placeholder="Enter Old Password" />
               </HALFGRID>
 
               <HALFGRID>
-                <TextInput type="text" placeholder="New Password" />
+                <TextInput type="text" placeholder="Enter New Password" />
               </HALFGRID>
 
               <HALFGRID>
@@ -30,7 +29,7 @@ const Settings = () => {
               </HALFGRID>
 
               <article>
-                <button type="submit">Change Password</button>
+                <button type="submit">Set New Password</button>
               </article>
             </form>
           </div>
@@ -50,10 +49,11 @@ const SettingsWrapper = styled.section`
   }
 
   p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding-bottom: 1rem;
-    color: #0c74c4;
+    color: #243137;
     font-family: "Open Sans", sans-serif;
+    font-weight: 800;
   }
 
   a {
@@ -83,7 +83,7 @@ const SettingsWrapper = styled.section`
     }
     button {
       color: #fff;
-      background-color: #094a6a;
+      background-color: #243137;
       border: none;
       text-decoration: none;
       text-align: center;
@@ -91,7 +91,7 @@ const SettingsWrapper = styled.section`
       font-size: 1.5rem;
       padding: 0.8rem 4rem;
       font-family: "Open Sans", sans-serif;
-      border-radius: 4px;
+      border-radius: 50px;
     }
 
     a {

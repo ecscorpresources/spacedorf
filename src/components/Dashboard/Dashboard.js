@@ -5,11 +5,11 @@ import Profile from "./Profile";
 import Settings from "./Settings";
 import Hero from "../Globals/Hero";
 import smallhero from "../../assets/img/11.png";
-//import the agents and get a random agent for now
+//import the agents and get one agent for now
 import agents from "../../data/agents";
 import Spinner from "../Globals/Spinner";
 import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
+import UploadProperty from "../Forms/UploadProperty";
 
 class Dashboard extends Component {
   state = {
@@ -37,9 +37,7 @@ class Dashboard extends Component {
               <div className="mb-5 d-flex justify-content-between">
                 {/* can include agent's name */}
                 <h1>Agent Dashboard</h1>
-                <Upload className="align-self-end" to="/">
-                  Upload Property
-                </Upload>
+                <UploadProperty />
               </div>
               <article className="d-flex">
                 <div className="mr-5">
@@ -53,15 +51,23 @@ class Dashboard extends Component {
                   <Tabs variant="unstyled">
                     <TabList
                       bg="#f7f7f7"
-                      style={{ padding: "1rem 0 1rem 15rem" }}
+                      style={{ paddingLeft: "15rem", height: "60px" }}
                     >
                       <Tab
+                        className="text-center"
                         mr={24}
                         pl={0}
                         bg="transparent"
                         border="0"
                         _focus={{ outline: "none" }}
-                        style={{ fontSize: "1.7rem" }}
+                        _selected={{
+                          bg: "#97d1e0",
+                        }}
+                        fontSize={15}
+                        fontWeight={600}
+                        style={{ height: "60px" }}
+                        textAlign={["center"]}
+                        color=" #fff"
                       >
                         My Properties
                       </Tab>
@@ -110,20 +116,6 @@ class Dashboard extends Component {
     );
   }
 }
-
-const Upload = styled(Link)`
-  color: #fff;
-  background: #75a710;
-  padding: 7px 20px;
-  font-size: 1.5rem;
-  border-radius: 50px;
-  text-decoration: none;
-
-  &:hover {
-    color: #fff;
-    background: #75a710;
-  }
-`;
 
 const DashboardWrapper = styled.section`
   width: 75vw;
