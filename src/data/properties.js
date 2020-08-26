@@ -291,7 +291,7 @@ export default [
     description: propertytext,
 
     agent: {
-      id: 8,
+      id: 9,
       img: agent7,
       realtor: "bb realtors",
       agent: "emerald chika",
@@ -322,7 +322,7 @@ export default [
     premiumspace: false,
 
     agent: {
-      id: 1,
+      id: 10,
       img: agent4,
       realtor: "stack homes estate management",
       agent: "aisa baba",
@@ -352,7 +352,7 @@ export default [
     premiumspace: false,
 
     agent: {
-      id: 3,
+      id: 11,
       img: agent3,
       realtor: "whole homes management",
       agent: "adebisi ogbomosho",
@@ -382,7 +382,7 @@ export default [
     premiumspace: false,
 
     agent: {
-      id: 3,
+      id: 12,
       img: agent3,
       realtor: "whole homes management",
       agent: "adebisi ogbomosho",
