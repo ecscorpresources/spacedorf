@@ -1,12 +1,14 @@
 import React from "react";
+// import styled from "styled-components";
+import "../../styles/dashboard.scss";
 
 const Properties = ({ agent }) => {
   return (
     <>
-      <table>
+      <table style={{ width: "100%" }}>
         <thead className="text-capitalize">
           <tr>
-            <th>PropertyTYpe</th>
+            <th>PropertyType</th>
             <th>Location</th>
             <th>Sale/Rent</th>
             <th>Price</th>
@@ -15,15 +17,16 @@ const Properties = ({ agent }) => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+          {agent.property.map((item) => (
+            <tr key={item.id}>
+              <td>{item.subtype}</td>
+              <td>{item.location}</td>
+              <td>rent</td>
+              <td>&#8358;{item.price}</td>
+              <td>view property</td>
+              <td>delete</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </>
