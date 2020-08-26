@@ -9,6 +9,7 @@ import smallhero from "../../assets/img/11.png";
 import agents from "../../data/agents";
 import Spinner from "../Globals/Spinner";
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 
 class Dashboard extends Component {
   state = {
@@ -33,9 +34,12 @@ class Dashboard extends Component {
         ) : (
           <>
             <DashboardWrapper>
-              <div className="mb-5">
+              <div className="mb-5 d-flex justify-content-between">
                 {/* can include agent's name */}
                 <h1>Agent Dashboard</h1>
+                <Upload className="align-self-end" to="/">
+                  Upload Property
+                </Upload>
               </div>
               <article className="d-flex">
                 <div className="mr-5">
@@ -106,6 +110,20 @@ class Dashboard extends Component {
     );
   }
 }
+
+const Upload = styled(Link)`
+  color: #fff;
+  background: #75a710;
+  padding: 7px 20px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+
+  &:hover {
+    color: #fff;
+    background: #75a710;
+  }
+`;
 
 const DashboardWrapper = styled.section`
   width: 75vw;

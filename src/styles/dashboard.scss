@@ -1,3 +1,14 @@
 table th {
   font-size: 1.5rem;
+  padding: 4rem 0 2rem 0;
+  text-transform: capitalize;
+}
+
+table tbody tr td {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+table tbody tr td:not(:last-child) {
+  padding-bottom: 2rem;
 }
