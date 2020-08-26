@@ -1,5 +1,5 @@
 import React from "react";
-import property1 from "../assets/img/properties/12.png";
+import property1 from "../assets/img/properties/21.png";
 import property2 from "../assets/img/properties/22.png";
 import property3 from "../assets/img/properties/23.png";
 import property4 from "../assets/img/properties/24.png";

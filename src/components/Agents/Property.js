@@ -7,7 +7,7 @@ import icon5 from "../../assets/img/properties/17.png";
 import icon6 from "../../assets/img/properties/18.png";
 import icon7 from "../../assets/img/properties/19.png";
 import icon8 from "../../assets/img/properties/20.png";
-import icon9 from "../../assets/img/properties/21.png";
+import icon9 from "../../assets/img/21.png";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 // import PropTypes from "prop-types";
