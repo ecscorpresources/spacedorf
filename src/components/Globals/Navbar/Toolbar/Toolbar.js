@@ -33,7 +33,7 @@ const Toolbar = (props) => {
               <Link to="/">SignUp</Link>
             </li>
             <li>
-              <Link to="/">LogIn</Link>
+              <Link to="/dashboard">LogIn</Link>
             </li>
           </ul>
         </div>

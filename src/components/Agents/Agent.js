@@ -11,13 +11,13 @@ const Agent = ({ agent }) => {
         <div>
           <img className="avatar img-fluid mb-3 " src={agent.img} alt="agent" />
           <h2 className="text-capitalize realtor">{agent.realtor}</h2>
-          <h3 className="agent text-capitalize">{agent.agent}</h3>
+          <h3 className="agent text-capitalize">{agent.name}</h3>
           <h5 className="email">{agent.email}</h5>
           <h6 className="address">{agent.address}</h6>
           <p className="phone">{agent.phone}</p>
         </div>
         <div className="d-flex justify-content-between align-items-center">
-          <ViewProfile to={`/agent/${agent.agent.replace(/\s+/g, "")}`}>
+          <ViewProfile to={`/agent/${agent.name.replace(/\s+/g, "")}`}>
             View Properties
           </ViewProfile>
           <div>

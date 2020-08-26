@@ -44,10 +44,9 @@ export default [
     premiumspace: false,
 
     agent: {
-      id: 1,
       img: agent4,
       realtor: "stack homes estate management",
-      agent: "aisa baba",
+      name: "aisa baba",
       email: "ab22@stackhomesmngt.com",
       address: "No 3 ade street, ikota",
       phone: "08098765432",
@@ -74,10 +73,9 @@ export default [
     premiumspace: false,
 
     agent: {
-      id: 2,
       img: agent2,
       realtor: "samson & sons",
-      agent: "samson daniel",
+      name: "samson daniel",
       email: "dan@sansonandsonsltdl.com",
       address: "No 27 new road",
       phone: "08098765432",
@@ -104,10 +102,9 @@ export default [
     premiumspace: false,
 
     agent: {
-      id: 3,
       img: agent3,
       realtor: "whole homes management",
-      agent: "adebisi ogbomosho",
+      name: "adebisi ogbomosho",
       email: "wholehomesmg@gmail.com",
       address: "No 1 red road lime estate",
       phone: "08098765432",
@@ -134,10 +131,9 @@ export default [
     premiumspace: false,
 
     agent: {
-      id: 4,
       img: agent4,
       realtor: "rita james",
-      agent: "rita james",
+      name: "rita james",
       email: "rita234@gmail.com",
       address: "No 55 ajayi kingsley street",
       phone: "08098765432",
@@ -163,10 +159,9 @@ export default [
     featured: false,
 
     agent: {
-      id: 5,
       img: agent5,
       realtor: "greenland estate agency",
-      agent: "omolade adeshina",
+      name: "omolade adeshina",
       email: "omo@greenlandest.com",
       address: "No 3 Ade Street, Ikota",
       phone: "08098765432",
@@ -195,10 +190,9 @@ export default [
     description: propertytext,
 
     agent: {
-      id: 6,
       img: agent6,
       realtor: "blessing aguele",
-      agent: "blessing aguele",
+      name: "blessing aguele",
       email: "blessing@gmail.com",
       address: "No 27 new road",
       phone: "08098765432",
@@ -227,10 +221,9 @@ export default [
     description: "Funtional workspace",
 
     agent: {
-      id: 7,
       img: agent7,
       realtor: "city homes",
-      agent: "emeka philips",
+      name: "emeka philips",
       email: "cityhomes@gmail.com",
       address: "No 1 red road lime estate",
       phone: "08098765432",
@@ -259,10 +252,9 @@ export default [
     description: propertytext,
 
     agent: {
-      id: 8,
       img: agent7,
       realtor: "bb realtors",
-      agent: "emerald chika",
+      name: "emerald chika",
       email: "chika@bbrealtors.com",
       address: "No 55 Ajayi Kingley Street",
       phone: "08098765432",
@@ -291,10 +283,9 @@ export default [
     description: propertytext,
 
     agent: {
-      id: 9,
       img: agent7,
       realtor: "bb realtors",
-      agent: "emerald chika",
+      name: "emerald chika",
       email: "chika@bbrealtors.com",
       address: "No 55 Ajayi Kingley Street",
       phone: "08098765432",
@@ -322,10 +313,9 @@ export default [
     premiumspace: false,
 
     agent: {
-      id: 10,
       img: agent4,
       realtor: "stack homes estate management",
-      agent: "aisa baba",
+      name: "aisa baba",
       email: "ab22@stackhomesmngt.com",
       address: "No 3 ade street, ikota",
       phone: "08098765432",
@@ -352,10 +342,9 @@ export default [
     premiumspace: false,
 
     agent: {
-      id: 11,
       img: agent3,
       realtor: "whole homes management",
-      agent: "adebisi ogbomosho",
+      name: "adebisi ogbomosho",
       email: "wholehomesmg@gmail.com",
       address: "No 1 red road lime estate",
       phone: "08098765432",
@@ -382,10 +371,9 @@ export default [
     premiumspace: false,
 
     agent: {
-      id: 12,
       img: agent3,
       realtor: "whole homes management",
-      agent: "adebisi ogbomosho",
+      name: "adebisi ogbomosho",
       email: "wholehomesmg@gmail.com",
       address: "No 1 red road lime estate",
       phone: "08098765432",

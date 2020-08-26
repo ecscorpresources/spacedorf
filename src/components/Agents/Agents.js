@@ -23,8 +23,8 @@ class Agents extends Component {
           <Spinner />
         ) : (
           <AgentsWrapper>
-            {agents.map((agent) => (
-              <Agent key={agent.id} agent={agent} />
+            {agents.map((agent, index) => (
+              <Agent key={index} agent={agent} />
             ))}
           </AgentsWrapper>
         )}

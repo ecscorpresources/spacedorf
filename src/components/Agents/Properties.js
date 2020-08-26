@@ -54,13 +54,13 @@ class Properties extends Component {
   render() {
     const name = this.props.match.params.name;
     const agentproperties = this.state.properties.filter(
-      (properties) => properties.agent.agent.replace(/\s+/g, "") === name
+      (properties) => properties.agent.name.replace(/\s+/g, "") === name
     );
 
     const agents = this.state.properties.map((property) => property.agent);
 
     const agent = agents.find(
-      (agent) => agent.agent.replace(/\s+/g, "") === name
+      (agent) => agent.name.replace(/\s+/g, "") === name
     );
 
     return (
