@@ -6,6 +6,39 @@ import styled from "styled-components";
 import Spinner from "../Globals/Spinner";
 import Property from "./Property";
 import PropertyFilterForm from "../Forms/PropertyFilterForm";
+import { Link } from "react-router-dom";
+
+const NotFound = () => {
+  return (
+    <>
+      <Container
+        className="d-flex flex-column justify-content-center align-items-center text-center"
+        style={{ height: "50vh", backgroundColor: "#1d9ed8" }}
+      >
+        <h1 className="mb-4" style={{ fontSize: "4rem" }}>
+          OOPS!!! THE AGENT YOU ARE <br /> LOOKING FOR DOES NOT EXIST
+        </h1>
+        <Link to="/agents">VIEW AGENTS</Link>
+      </Container>
+    </>
+  );
+};
+
+const Container = styled.section`
+  h1 {
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+
+    &:hover {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+`;
 
 class Properties extends Component {
   state = {
@@ -41,7 +74,9 @@ class Properties extends Component {
             <Spinner />
           ) : (
             <Wrapper>
-              {agent === undefined ? null : (
+              {agent === undefined || null ? (
+                <NotFound />
+              ) : (
                 <article className="d-flex justify-content-between p-5 mb-4 agent-details">
                   <div className="d-flex">
                     <img
@@ -72,7 +107,8 @@ class Properties extends Component {
                     <Property key={property.id} property={property} />
                   ))}
                 </div>
-                <PropertyFilterForm />
+                {/* is this right? */}
+                {agent === undefined || null ? null : <PropertyFilterForm />}
               </PropertiesWrapper>
             </Wrapper>
           )}
@@ -83,11 +119,10 @@ class Properties extends Component {
 }
 
 const Wrapper = styled.section`
-  width: 85vw;
-  margin: 4rem auto;
-
   .agent-details {
     border-bottom: 1px solid #ddd;
+    width: 85vw;
+    margin: 4rem auto;
   }
 
   .realtor {
@@ -109,6 +144,8 @@ const Wrapper = styled.section`
 `;
 
 const PropertiesWrapper = styled.article`
+  width: 85vw;
+  margin: 4rem auto;
   display: grid;
   grid-template-columns: 3fr 1fr;
   column-gap: 2rem;
