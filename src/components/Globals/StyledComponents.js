@@ -35,18 +35,18 @@ export const Contact = styled(Link)`
 `;
 
 export const TextInput = styled.input`
-  border: 2px solid #ddd;
+  border: 1px solid #243137;
   border-radius: 4px;
   font-size: 1.4rem;
   padding-left: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
-  font-weight: 600;
+  width: 100%;
 `;
 
 export const TextArea = styled.textarea`
-  border: 2px solid #ddd;
+  border: 1px solid #243137;
   border-radius: 4px;
   font-size: 1.4rem;
   padding-left: 1rem;
@@ -55,18 +55,17 @@ export const TextArea = styled.textarea`
   margin-bottom: 1.5rem;
   width: 100%;
   resize: none;
-  font-weight: 600;
 `;
 
 export const Select = styled.select`
-  border: 2px solid #ddd;
+  border: 1px solid #243137;
   border-radius: 4px;
   font-size: 1.4rem;
   padding-left: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
-  font-weight: 600;
+  width: 100%;
   color: grey;
 `;
 
@@ -99,7 +98,6 @@ export const EQUALGRID = styled.article`
 export const HALFGRID = styled.article`
   display: grid;
   grid-template-columns: 0.5fr;
-  column-gap: 1rem;
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
