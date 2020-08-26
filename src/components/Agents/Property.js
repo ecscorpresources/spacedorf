@@ -121,6 +121,10 @@ const PropertyWrapper = styled.section`
       justify-content: space-between;
     }
 
+    .details img {
+      width: 17px;
+    }
+
     .details ul li {
       display: flex;
       align-items: center;
