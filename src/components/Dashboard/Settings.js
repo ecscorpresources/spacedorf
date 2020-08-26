@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import FadeIn from "react-fade-in";
 import { HALFGRID, TextInput } from "../Globals/StyledComponents";
 import styled from "styled-components";
-import icon from "../../assets/img/99.png";
 
 const Settings = () => {
   return (
