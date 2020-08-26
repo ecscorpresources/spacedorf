@@ -24,7 +24,12 @@ class Properties extends Component {
       (properties) => properties.agent.agent.replace(/\s+/g, "") === name
     );
 
-    console.log(agentproperties);
+    const agents = this.state.properties.map((property) => property.agent);
+
+    const agent = agents.find(
+      (agent) => agent.agent.replace(/\s+/g, "") === name
+    );
+
     return (
       <>
         <Hero img={smallhero}>
@@ -36,12 +41,39 @@ class Properties extends Component {
             <Spinner />
           ) : (
             <Wrapper>
-              <section>
-                {agentproperties.map((property) => (
-                  <Property key={property.id} property={property} />
-                ))}
-              </section>
-              <PropertyFilterForm />
+              {agent === undefined ? null : (
+                <article className="d-flex justify-content-between p-5 mb-4 agent-details">
+                  <div className="d-flex">
+                    <img
+                      className="mr-5"
+                      style={{ width: "160px" }}
+                      src={agent.img}
+                      alt="agent"
+                    />
+                    <div className="align-self-end">
+                      <h5 className="text-capitalize realtor">
+                        {agent.realtor}
+                      </h5>
+                      <h6 className="text-capitalize address">
+                        {agent.address}
+                      </h6>
+                    </div>
+                  </div>
+
+                  <div className="align-self-end">
+                    <p className="phone">{agent.phone}</p>
+                    <p className="email">{agent.email}</p>
+                  </div>
+                </article>
+              )}
+              <PropertiesWrapper>
+                <div>
+                  {agentproperties.map((property) => (
+                    <Property key={property.id} property={property} />
+                  ))}
+                </div>
+                <PropertyFilterForm />
+              </PropertiesWrapper>
             </Wrapper>
           )}
         </section>
@@ -53,6 +85,30 @@ class Properties extends Component {
 const Wrapper = styled.section`
   width: 85vw;
   margin: 4rem auto;
+
+  .agent-details {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .realtor {
+    font-weight: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem !important;
+  }
+
+  .address {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .phone,
+  .email {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+`;
+
+const PropertiesWrapper = styled.article`
   display: grid;
   grid-template-columns: 3fr 1fr;
   column-gap: 2rem;

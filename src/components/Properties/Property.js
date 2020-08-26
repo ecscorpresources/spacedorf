@@ -129,6 +129,10 @@ const PropertyWrapper = styled.section`
       align-items: center;
     }
 
+    .details img {
+      width: 17px;
+    }
+
     .details ul.benefits {
       display: flex;
 
