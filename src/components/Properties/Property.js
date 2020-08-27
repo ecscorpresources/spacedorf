@@ -9,8 +9,8 @@ import icon7 from "../../assets/img/properties/19.png";
 import icon8 from "../../assets/img/properties/20.png";
 import icon9 from "../../assets/img/21.png";
 import styled from "styled-components";
-import { PrimaryLink } from "../../components/Globals/StyledComponents";
 import { Link } from "react-router-dom";
+import ContactAgent from "../Forms/ContactAgent";
 // import PropTypes from "prop-types";
 
 const Property = ({ property }) => {
@@ -99,7 +99,7 @@ const Property = ({ property }) => {
           </li>
         </ul>
 
-        <PrimaryLink to={`/agent/${agent.name}`}>Contact Agent</PrimaryLink>
+        <ContactAgent agent={agent} />
       </div>
     </PropertyWrapper>
   );
