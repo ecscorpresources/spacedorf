@@ -1,6 +1,7 @@
 import React from "react";
-// import styled from "styled-components";
+import { Link } from "react-router-dom";
 import "../../styles/dashboard.scss";
+import deleteicon from "../../assets/img/30.png";
 
 const Properties = ({ agent }) => {
   return (
@@ -23,8 +24,16 @@ const Properties = ({ agent }) => {
               <td>{item.location}</td>
               <td>rent</td>
               <td>&#8358;{item.price}</td>
-              <td>view property</td>
-              <td>delete</td>
+              <td>
+                <Link to="/dashboard">view property</Link>
+              </td>
+              <td className="delete">
+                <img
+                  style={{ cursor: "pointer" }}
+                  src={deleteicon}
+                  alt="delete"
+                />
+              </td>
             </tr>
           ))}
         </tbody>

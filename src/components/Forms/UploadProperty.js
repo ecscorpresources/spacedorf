@@ -4,13 +4,11 @@ import { Modal, ModalBody } from "reactstrap";
 import styled from "styled-components";
 import closeicon from "../../assets/img/close.png";
 import {
-  HALFGRID,
   GRID,
   EQUALGRID,
   Select,
   TextInput,
 } from "../Globals/StyledComponents";
-// import { MdPhotoCamera } from "react-icons/md";
 import icon from "../../assets/img/99.png";
 
 const SignIn = (props) => {
@@ -74,14 +72,23 @@ const SignIn = (props) => {
                 </Select>
               </EQUALGRID>
 
-              <HALFGRID>
+              <EQUALGRID>
+                <section className="file-container">
+                  <div className="file">
+                    <input type="file" name="profileimage" id="profileimage" />
+                    <label htmlFor="profileimage">
+                      Add Property <br /> Image
+                    </label>
+                  </div>
+                </section>
+
                 <div>
                   <label className="d-block" htmlFor="price">
                     Enter Asking Price
                   </label>
                   <TextInput name="name" type="text" />
                 </div>
-              </HALFGRID>
+              </EQUALGRID>
 
               <article>
                 <button type="submit">Upload Property</button>
@@ -156,14 +163,28 @@ const Wrapper = styled.section`
     background-position: 95% center;
   }
 
-  .file {
-    border: 2px dashed #cfddf1;
-    background-color: #ecf2fa;
+  .file-container {
     margin-bottom: 1.5rem;
-    padding: 0 1rem 1rem 1rem;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
+
+    .file {
+      border: 1px solid #000;
+      width: 126px;
+      text-align: center;
+      height: 126px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      background: #fff;
+    }
+
+    & h5 {
+      padding-top: 1rem;
+      padding-left: 1rem;
+      font-weight: 600;
+      color: grey;
+      font-size: 1.5rem;
+    }
 
     & article {
       align-self: center;
@@ -185,11 +206,7 @@ const Wrapper = styled.section`
       cursor: pointer;
       font-weight: 600;
       color: grey;
-    }
-
-    .file-icon {
-      font-size: 6rem;
-      margin-right: 0.5rem;
+      margin-bottom: 0 !important;
     }
   }
 `;

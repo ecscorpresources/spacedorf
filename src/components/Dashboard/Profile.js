@@ -1,13 +1,7 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import FadeIn from "react-fade-in";
-import {
-  HALFGRID,
-  EQUALGRID,
-  Select,
-  TextInput,
-} from "../Globals/StyledComponents";
-import { MdPhotoCamera } from "react-icons/md";
+import { EQUALGRID, Select, TextInput } from "../Globals/StyledComponents";
 import styled from "styled-components";
 import icon from "../../assets/img/99.png";
 
@@ -76,23 +70,14 @@ class Profile extends Component {
                     placeholder="Upload Agency Certificate"
                   />
                 </EQUALGRID>
-                <HALFGRID>
-                  <section className="file">
-                    <article>
-                      <div>
-                        <input
-                          type="file"
-                          name="profileimage"
-                          id="profileimage"
-                        />
-                        <label htmlFor="profileimage">
-                          <MdPhotoCamera className="file-icon" /> Upload Profile
-                          Image
-                        </label>
-                      </div>
-                    </article>
-                  </section>
-                </HALFGRID>
+
+                <section className="file-container">
+                  <div className="file">
+                    <input type="file" name="profileimage" id="profileimage" />
+                    <label htmlFor="profileimage">Upload Profile Image</label>
+                  </div>
+                </section>
+
                 <article>
                   <button type="submit">Update Profile</button>
                 </article>
@@ -106,13 +91,9 @@ class Profile extends Component {
 }
 
 const ProfileWrapper = styled.section`
-  width: 45vw;
-  margin-left: 10rem;
-  padding: 4rem 0;
-  @media (max-width: 992px) {
-    width: 70vw;
-    margin: 0 auto;
-  }
+  background: #f7f7f7;
+  margin-top: 4rem;
+  padding: 4rem 6rem;
 
   p {
     font-size: 1.7rem;
@@ -161,14 +142,20 @@ const ProfileWrapper = styled.section`
     background-position: 95% center;
   }
 
-  .file {
-    border: 2px dashed #cfddf1;
-    background-color: #ecf2fa;
+  .file-container {
     margin-bottom: 1.5rem;
-    padding: 0 1rem 1rem 1rem;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
+
+    .file {
+      border: 1px solid #000;
+      width: 126px;
+      text-align: center;
+      height: 126px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      background: #fff;
+    }
 
     & h5 {
       padding-top: 1rem;
@@ -198,11 +185,7 @@ const ProfileWrapper = styled.section`
       cursor: pointer;
       font-weight: 600;
       color: grey;
-    }
-
-    .file-icon {
-      font-size: 6rem;
-      margin-right: 0.5rem;
+      margin-bottom: 0 !important;
     }
   }
 `;

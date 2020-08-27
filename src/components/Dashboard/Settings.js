@@ -40,13 +40,9 @@ const Settings = () => {
 };
 
 const SettingsWrapper = styled.section`
-  width: 45vw;
-  margin-left: 10rem;
-  padding: 4rem 0;
-  @media (max-width: 992px) {
-    width: 70vw;
-    margin: 0 auto;
-  }
+  background: #f7f7f7;
+  margin-top: 4rem;
+  padding: 4rem 0 4rem 6rem;
 
   p {
     font-size: 1.5rem;

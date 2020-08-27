@@ -51,43 +51,57 @@ class Dashboard extends Component {
                   <Tabs variant="unstyled">
                     <TabList
                       bg="#f7f7f7"
-                      style={{ paddingLeft: "15rem", height: "60px" }}
+                      style={{ paddingLeft: "15rem", height: "50px" }}
                     >
                       <Tab
                         className="text-center"
                         mr={24}
-                        pl={0}
                         bg="transparent"
                         border="0"
                         _focus={{ outline: "none" }}
                         _selected={{
-                          bg: "#97d1e0",
+                          bg: "#71675A",
+                          color: "#fff",
                         }}
                         fontSize={15}
                         fontWeight={600}
-                        style={{ height: "60px" }}
+                        style={{ height: "50px", width: "12rem" }}
                         textAlign={["center"]}
-                        color=" #fff"
+                        color=" #000"
                       >
                         My Properties
                       </Tab>
                       <Tab
                         mr={24}
-                        pl={0}
                         bg="transparent"
                         border="0"
                         _focus={{ outline: "none" }}
-                        style={{ fontSize: "1.7rem" }}
+                        _selected={{
+                          bg: "#71675A",
+                          color: "#fff",
+                        }}
+                        fontSize={15}
+                        fontWeight={600}
+                        style={{ height: "50px", width: "12rem" }}
+                        textAlign={["center"]}
+                        color=" #000"
                       >
                         Profile
                       </Tab>
 
                       <Tab
-                        pl={0}
                         bg="transparent"
                         border="0"
                         _focus={{ outline: "none" }}
-                        style={{ fontSize: "1.7rem" }}
+                        _selected={{
+                          bg: "#71675A",
+                          color: "#fff",
+                        }}
+                        fontSize={15}
+                        fontWeight={600}
+                        style={{ height: "50px", width: "12rem" }}
+                        textAlign={["center"]}
+                        color=" #000"
                       >
                         Settings
                       </Tab>
