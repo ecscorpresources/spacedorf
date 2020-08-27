@@ -4,6 +4,7 @@ import FadeIn from "react-fade-in";
 import { EQUALGRID, Select, TextInput } from "../Globals/StyledComponents";
 import styled from "styled-components";
 import icon from "../../assets/img/99.png";
+import iconwhite from "../../assets/img/49.png";
 
 class Profile extends Component {
   render() {
@@ -18,8 +19,8 @@ class Profile extends Component {
             <div>
               <form>
                 <EQUALGRID>
-                  <Select>
-                    <option value="Country">Country</option>
+                  <Select className="agent">
+                    <option value="agent">Agent</option>
                   </Select>
                   <TextInput type="text" placeholder="About Company" />
                 </EQUALGRID>
@@ -140,6 +141,15 @@ const ProfileWrapper = styled.section`
     background: url(${icon});
     background-repeat: no-repeat;
     background-position: 95% center;
+  }
+
+  .agent {
+    background: url(${iconwhite});
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-color: #ccc8bf !important;
+    color: #fff;
+    border: none;
   }
 
   .file-container {

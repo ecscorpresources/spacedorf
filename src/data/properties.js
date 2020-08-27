@@ -8,6 +8,7 @@ import property5 from "../assets/img/properties/25.png";
 import property6 from "../assets/img/home/1.png";
 import property7 from "../assets/img/home/2.png";
 import property8 from "../assets/img/home/3.png";
+import property9 from "../assets/img/home/4.png";
 
 import agent2 from "../assets/img/agents/38.png";
 import agent3 from "../assets/img/agents/39.png";
@@ -21,6 +22,18 @@ const propertytext = (
   <>
     All you need to complete setup for your <br /> comfort, choosing from a
     variety of <br /> charming & luxury well furnished <br /> apartment
+  </>
+);
+
+const homeproperty = (
+  <>
+    home <br /> properties
+  </>
+);
+
+const shortlet = (
+  <>
+    short-let <br /> apartments
   </>
 );
 
@@ -173,7 +186,7 @@ export default [
   {
     id: 6,
     img: property6,
-    type: "short-let apartments",
+    type: shortlet,
     location: "along ibadan express way",
     realtor: "blessing aguele",
     subtype: "land",
@@ -265,8 +278,8 @@ export default [
 
   {
     id: 9,
-    img: property8,
-    type: "event space",
+    img: property9,
+    type: homeproperty,
     location: "along ibadan express way",
     realtor: "bb realtors",
     subtype: "land",

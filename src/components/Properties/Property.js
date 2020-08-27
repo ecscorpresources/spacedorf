@@ -40,13 +40,22 @@ const Property = ({ property }) => {
         <div className="details">
           <ul className="location">
             <li>
-              <img src={icon1} alt="icon" /> <span>{location}</span>
+              <div className="icon">
+                <img src={icon1} alt="icon" />
+              </div>
+              <span>{location}</span>
             </li>
             <li>
-              <img src={icon2} alt="icon" /> <span>{realtor}</span>
+              <div className="icon">
+                <img src={icon2} alt="icon" />
+              </div>
+              <span>{realtor}</span>
             </li>
             <li>
-              <img src={icon3} alt="icon" /> <span>{subtype}</span>
+              <div className="icon">
+                <img src={icon3} alt="icon" />
+              </div>
+              <span>{subtype}</span>
             </li>
           </ul>
 
@@ -104,7 +113,7 @@ const PropertyWrapper = styled.section`
   }
 
   .property-description-section {
-    margin-left: 1.5rem;
+    margin-left: 3rem;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -124,13 +133,13 @@ const PropertyWrapper = styled.section`
       justify-content: space-between;
     }
 
+    .details .icon {
+      width: 25px;
+    }
+
     .details ul li {
       display: flex;
       align-items: center;
-    }
-
-    .details img {
-      width: 17px;
     }
 
     .details ul.benefits {

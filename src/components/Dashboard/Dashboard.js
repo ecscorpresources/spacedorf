@@ -63,7 +63,7 @@ class Dashboard extends Component {
                           bg: "#71675A",
                           color: "#fff",
                         }}
-                        fontSize={15}
+                        fontSize={14}
                         fontWeight={600}
                         style={{ height: "50px", width: "12rem" }}
                         textAlign={["center"]}
@@ -80,7 +80,7 @@ class Dashboard extends Component {
                           bg: "#71675A",
                           color: "#fff",
                         }}
-                        fontSize={15}
+                        fontSize={14}
                         fontWeight={600}
                         style={{ height: "50px", width: "12rem" }}
                         textAlign={["center"]}
@@ -97,7 +97,7 @@ class Dashboard extends Component {
                           bg: "#71675A",
                           color: "#fff",
                         }}
-                        fontSize={15}
+                        fontSize={14}
                         fontWeight={600}
                         style={{ height: "50px", width: "12rem" }}
                         textAlign={["center"]}

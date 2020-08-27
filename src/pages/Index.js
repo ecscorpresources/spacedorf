@@ -7,7 +7,7 @@ import contactimg from "../assets/img/home/6.png";
 import FeaturedProperties from "../components/Properties/FeaturedProperties";
 import SearchProperty from "../components/Forms/SearchProperty";
 import { Contact } from "../components/Globals/StyledComponents";
-import methodimg from "../assets/img/home/spaceforf.png";
+import methodimg from "../assets/img/home/32.png";
 
 const Homepage = () => {
   return (
@@ -16,8 +16,35 @@ const Homepage = () => {
         <SearchForm />
       </Hero>
 
-      <section className="d-flex justify-content-center align-items-center homeFirstSection">
-        <img src={methodimg} alt="method" />
+      <section className="homeFirstSection">
+        <div className="process">
+          <img src={methodimg} alt="method" />
+        </div>
+        <article className="processes">
+          <div>
+            <h5>Explore</h5>
+            <p>
+              Explore our large collection of fully <br /> serviced premium
+              apartments and <br /> work spaces
+            </p>
+          </div>
+
+          <div>
+            <h5>Choose a location</h5>
+            <p>
+              Choose an apartment <br /> or work space that <br /> meets your
+              location
+            </p>
+          </div>
+
+          <div>
+            <h5>Book</h5>
+            <p>
+              Having found the perfect space, <br /> contact the property
+              manager <br /> or use our payment gateway to book
+            </p>
+          </div>
+        </article>
       </section>
       <FeaturedProperties />
       <section className="searchpropertysection d-flex">

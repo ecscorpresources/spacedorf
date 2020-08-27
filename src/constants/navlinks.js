@@ -13,9 +13,4 @@ export const navbarlinks = [
     text: "Rent an Event Hall",
     path: "/premiumspaces",
   },
-
-  {
-    text: "Let's Talk",
-    path: "/",
-  },
 ];

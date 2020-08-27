@@ -10,6 +10,8 @@ import {
   TextInput,
 } from "../Globals/StyledComponents";
 import icon from "../../assets/img/99.png";
+import iconwhite from "../../assets/img/49.png";
+import moneyicon from "../../assets/img/31.png";
 
 const SignIn = (props) => {
   const [modal, setModal] = useState(false);
@@ -29,7 +31,7 @@ const SignIn = (props) => {
             <h5>Upload Property</h5>
             <form>
               <EQUALGRID>
-                <Select>
+                <Select className="propertytype">
                   <option value="propertytype">Property Type</option>
                 </Select>
 
@@ -86,7 +88,7 @@ const SignIn = (props) => {
                   <label className="d-block" htmlFor="price">
                     Enter Asking Price
                   </label>
-                  <TextInput name="name" type="text" />
+                  <TextInput className="price" name="name" type="text" />
                 </div>
               </EQUALGRID>
 
@@ -161,6 +163,22 @@ const Wrapper = styled.section`
     background: url(${icon});
     background-repeat: no-repeat;
     background-position: 95% center;
+  }
+
+  .propertytype {
+    background: url(${iconwhite});
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-color: #ccc8bf !important;
+    color: #fff;
+    border: none;
+  }
+
+  .price {
+    background: url(${moneyicon});
+    background-repeat: no-repeat;
+    background-position: 2% center;
+    padding-left: 31px !important;
   }
 
   .file-container {

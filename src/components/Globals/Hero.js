@@ -10,7 +10,7 @@ export default styled(Hero)`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: ${(props) => (props.home ? "100vh" : "50vh")};
+  min-height: ${(props) => (props.home ? "100vh" : "35vh")};
   margin-top: -89px;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@ export default styled(Hero)`
 
   h1 {
     color: #fff;
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding-top: 10rem;
     padding-left: 5rem;
     font-family: NexaBold;

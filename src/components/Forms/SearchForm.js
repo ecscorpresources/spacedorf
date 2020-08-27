@@ -103,7 +103,7 @@ const FormWrapper = styled.section`
 
     .form-container {
       background-color: rgba(236, 230, 223, 0.5);
-      padding: 20px 60px;
+      padding: 40px 60px;
     }
 
     .form-container-first-row {
