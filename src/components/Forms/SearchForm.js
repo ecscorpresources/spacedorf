@@ -125,6 +125,10 @@ const FormWrapper = styled.section`
       padding: 1rem 0 1rem 1rem;
       font-size: 1.3rem;
       border: 1px solid #fff;
+
+      &:focus {
+        outline: none !important;
+      }
     }
 
     input {

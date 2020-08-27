@@ -10,7 +10,7 @@ export default styled(Hero)`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: ${(props) => (props.home ? "100vh" : "35vh")};
+  min-height: ${(props) => (props.home ? "100vh" : "50vh")};
   margin-top: -89px;
   display: flex;
   flex-direction: column;

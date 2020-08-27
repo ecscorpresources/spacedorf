@@ -24,6 +24,7 @@ const Property = ({ property }) => {
     utilities,
     timeposted,
     price,
+    agent,
   } = property;
   return (
     <PropertyWrapper>
@@ -98,7 +99,7 @@ const Property = ({ property }) => {
           </li>
         </ul>
 
-        <PrimaryLink to="/agent">Contact Agent</PrimaryLink>
+        <PrimaryLink to={`/agent/${agent.name}`}>Contact Agent</PrimaryLink>
       </div>
     </PropertyWrapper>
   );
