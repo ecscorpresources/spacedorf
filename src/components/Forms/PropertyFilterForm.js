@@ -64,10 +64,6 @@ class PropertyFilterForm extends Component {
             <FilterButton type="submit">SEARCH</FilterButton>
           </form>
         </article>
-
-        {/* <article>
-          <img src={banner} alt="baner" />
-        </article> */}
       </FilterWrapper>
     );
   }

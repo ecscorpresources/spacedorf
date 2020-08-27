@@ -133,7 +133,7 @@ class FilterForm extends Component {
               </div>
             </div>
             <FilterButton type="submit">APPLY FILTER</FilterButton>
-            <Link to="#!">REST FILTER</Link>
+            <Link to="#!">RESET FILTER</Link>
           </form>
         </article>
       </FilterWrapper>
