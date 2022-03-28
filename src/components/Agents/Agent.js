@@ -8,15 +8,15 @@ const Agent = ({ agent }) => {
   return (
     <>
       <AgentWrapper className="agent d-flex flex-column justify-content-between">
-        <div>
-          <img className="avatar img-fluid mb-3 " src={agent.img} alt="agent" />
+        <img className="avatar img-fluid mb-3 " src={agent.img} alt="agent" />
+        <div className="p-4">
           <h2 className="text-capitalize realtor">{agent.realtor}</h2>
           <h3 className="agent text-capitalize">{agent.name}</h3>
           <h5 className="email">{agent.email}</h5>
           <h6 className="address">{agent.address}</h6>
           <p className="phone">{agent.phone}</p>
         </div>
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex justify-content-between align-items-center px-4 pb-4 pt-1 ">
           <ViewProfile to={`/agent/${agent.name.replace(/\s+/g, "")}`}>
             View Properties
           </ViewProfile>
@@ -34,8 +34,13 @@ const Agent = ({ agent }) => {
 };
 
 const AgentWrapper = styled.article`
-  background: #f7f7f7;
-  padding: 15px;
+  background: #fff;
+  border: 2px solid #f7f7f7;
+
+  h2 {
+    font-size: 1.7em !important;
+    font-weight: bolder;
+  }
 
   .realtor {
     font-size: 14px;
@@ -44,7 +49,7 @@ const AgentWrapper = styled.article`
   }
 
   .agent {
-    margin-bottom: 7rem !important;
+    margin-bottom: 2.5rem !important;
     font-size: 12px;
     font-weight: 600;
   }
@@ -54,7 +59,7 @@ const AgentWrapper = styled.article`
   .phone {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 20px !important;
+    margin-bottom: 8px !important;
   }
   .rating {
     font-size: 13px;

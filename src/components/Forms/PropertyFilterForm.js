@@ -10,7 +10,7 @@ class PropertyFilterForm extends Component {
       <FilterWrapper>
         <article className="form-section">
           <form>
-            <select name="contacttype">
+            {/* <select name="contacttype">
               <option value="All Contract Type">All Contract Type</option>
             </select>
             <select name="address">
@@ -61,7 +61,7 @@ class PropertyFilterForm extends Component {
                 </div>
               </div>
             </div>
-            <FilterButton type="submit">SEARCH</FilterButton>
+            <FilterButton type="submit">SEARCH</FilterButton> */}
           </form>
         </article>
       </FilterWrapper>
@@ -73,7 +73,8 @@ const FilterWrapper = styled.section`
   .form-section {
     background: #f8f8f8;
     padding: 1.5rem 1.5rem 3rem 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    height: 60vh;
   }
 
   form {

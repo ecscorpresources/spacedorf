@@ -27,7 +27,7 @@ class Dashboard extends Component {
 
     return (
       <>
-        <Hero img={smallhero}></Hero>
+        <Hero img={smallhero} dashboard="true"></Hero>
 
         {agent === undefined ? (
           <Spinner />

@@ -10,6 +10,9 @@ import styled from "styled-components";
 import { PrimaryLink } from "../Globals/StyledComponents";
 
 const Property = ({ property }) => {
+  const handleClick = () => {
+    window.scroll(0, 0);
+  };
   const {
     img,
     type,
@@ -31,12 +34,14 @@ const Property = ({ property }) => {
         </Link>
       </div>
       <div className="property-description-section">
-        <h5>{type}</h5>
         <div className="details">
           <ul>
-            <li>
-              <img src={icon1} alt="icon" /> <span>{location}</span>
-            </li>
+            <div className="type-location">
+              <h5>{type}</h5>
+              <li>
+                <img src={icon1} alt="icon" /> <span>{location}</span>
+              </li>
+            </div>
             <li>
               <img src={icon2} alt="icon" /> <span>{guest}</span>
             </li>
@@ -64,7 +69,9 @@ const Property = ({ property }) => {
           </li>
         </ul>
 
-        <PrimaryLink to="/agent">More Info...</PrimaryLink>
+        <PrimaryLink to="/property" onClick={handleClick}>
+          More Info...
+        </PrimaryLink>
       </div>
     </PropertyWrapper>
   );
@@ -75,7 +82,7 @@ const PropertyWrapper = styled.section`
   border: 1px solid #ddd;
 
   &:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .property-description-section {
@@ -93,6 +100,9 @@ const PropertyWrapper = styled.section`
     }
 
     .details {
+      .type-location {
+        margin-bottom: 2rem;
+      }
     }
 
     .details ul li {
@@ -140,7 +150,7 @@ const PropertyWrapper = styled.section`
     }
 
     .price {
-      color: red;
+      color: #f58634;
       font-size: 2.5rem;
       font-weight: bold;
       margin-bottom: 1rem;

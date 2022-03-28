@@ -2,13 +2,14 @@ import React from "react";
 import PremiumSpaces from "../components/PremiumSpace/PremiumSpaces";
 import styled from "styled-components";
 import Hero from "../components/Globals/Hero";
-import smallhero from "../assets/img/11.png";
+import smallhero from "../assets/img/53.png";
+import LocateAgent from "../components/Forms/LocateAgent";
 
 const PropertyListing = () => {
   return (
     <>
       <Hero img={smallhero}>
-        <h1>Get a Premium Space</h1>
+        <LocateAgent text="Get an Event Space" />
       </Hero>
       <SectionWrapper>
         <PremiumSpaces />

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Hero from "../../components/Globals//Hero";
-import smallhero from "../../assets/img/11.png";
+import smallhero from "../../assets/img/53.png";
 import properties from "../../data/properties";
 import styled from "styled-components";
 import Spinner from "../Globals/Spinner";
@@ -46,6 +46,7 @@ class Properties extends Component {
   };
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     this.setState({
       properties,
     });

@@ -1,15 +1,22 @@
 @font-face {
-  font-family: "NexaBold";
-  src: url("../../assets/fonts/NexaBold.otf") format("opentype");
+  font-family: 'NexaBold';
+  src: url('../../assets/fonts/NexaBold.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "leaguespartan";
-  src: url("../../assets/fonts/LeagueSpartan.otf") format("opentype");
+  font-family: 'avertaDemo';
+  src: url('../../assets/fonts/avertaDemo.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@font-face {
+  font-family: 'leaguespartan';
+  src: url('../../assets/fonts/LeagueSpartan.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');

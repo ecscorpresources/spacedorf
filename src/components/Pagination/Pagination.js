@@ -9,11 +9,11 @@ const Pagination = () => {
       <div id="paginationFirstSection" className="container-fluid">
         <div className="row">
           <div className="col-md-10">
-            <div>
+            {/* <div>
               <Link to="monkhey" className="view_agents">
                 View All Agents
               </Link>
-            </div>
+            </div> */}
             <div className="pagination">
               <ul>
                 <li>
